@@ -1,4 +1,4 @@
-body{
-    background-color: black;
-    color: blanchedalmond;
-}
+@import "variables/fonts";
+@import "variables/colors";
+
+@import "layout";
