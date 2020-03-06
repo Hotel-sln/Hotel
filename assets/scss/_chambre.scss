@@ -1,5 +1,5 @@
 
-main{
+.chambre{
     padding-top: 35px;
     background-color: $bgmain;
 
@@ -8,6 +8,18 @@ main{
             display: grid;
             grid-template-rows: auto 55px;
             justify-content: center;
+
+                figure{
+                    display: flex;
+                    justify-content: center;
+                    .imgchambre{
+                        border-radius: 100px;
+                        overflow: hidden;
+                        box-shadow: 10px 5px 5px $boxs ;
+                        
+                    }
+                    
+                }
             
                 .description {
                     padding-top: 15px;
@@ -43,28 +55,20 @@ main{
             
         }
 
+        .section1{
+   
+            grid-template-columns:  45% 25% ;
+           
+            }
+        .section2{
+           
+            grid-template-columns:  25% 45% ;
+            
+            }
+
     
 }
 /* classes specifique de la pages chambre */
-.imgchambre{
-    border-radius: 100px;
-    overflow: hidden;
-    box-shadow: 10px 5px 5px $boxs ;
-    
-}
 
 
-.section1{
-   
-    grid-template-columns:  45% 25% ;
-   
-    }
-.section2{
-   
-    grid-template-columns:  25% 45% ;
-    
-    }
-figure{
-    display: flex;
-    justify-content: center;
-}
+
