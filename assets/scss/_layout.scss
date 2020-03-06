@@ -13,12 +13,36 @@ body {
             display: flex;
             text-align: justify;
         }
+        .bannier {
+            width: 100%;
+            height: 400px;
+        }
         article {
             flex-basis: 70%;
         }
         img {
             width: 400px;
             padding: 10px;
+        }
+        .photoshotel,
+        .services {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .incline {
+            width: 100px;
+            height: 250px;
+            padding: 100px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .logo {
+            width: 50px;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
         }
     }
 }
