@@ -1,0 +1,76 @@
+body{
+    color: white;
+    .chambre{
+        padding-top: 35px;
+        background-color: $bgmain;
+
+            
+            section{
+                display: grid;
+                grid-template-rows: auto 55px;
+                justify-content: center;
+
+                    figure{
+                        display: flex;
+                        justify-content: center;
+                        .imgchambre{
+                            border-radius: 100px;
+                            overflow: hidden;
+                            box-shadow: 10px 5px 5px $boxs ;
+                            
+                        }
+                        
+                    }
+                
+                    .description {
+                        padding-top: 15px;
+                        background-color: $bgsection;
+                        border-radius: 10px;
+                        box-shadow: 10px 5px 5px $boxs  ;
+                        padding:  15px;
+
+                        display: grid;
+                        grid-template-rows: auto 25px;
+                        grid-template-columns: 25% auto 20%;
+
+                        .txtchambre{
+                            grid-column: 1 / span 3; 
+                            grid-row: 1;
+                        }
+
+                        .prix{
+                            margin-top: 10px;
+                            grid-column: 1 ; 
+                            grid-row: 2;
+
+                        }
+                        .star{
+                            width:110px ;
+                            height: 25px;
+                            grid-column: 3; 
+                            grid-row: 2;
+                        }
+                        
+                    }
+                    
+                
+            }
+
+            .section1{
+    
+                grid-template-columns:  45% 25% ;
+            
+                }
+            .section2{
+            
+                grid-template-columns:  25% 45% ;
+                
+                }
+
+        
+    }
+}
+/* classes specifique de la pages chambre */
+
+
+
