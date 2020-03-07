@@ -1,10 +1,11 @@
 header{
-    box-shadow: 125px 25px 25px red;
+    width: 100%;
     background-color: $backgroundfooter;
     display: grid;
-    grid-template-columns: 150px auto 110px 160px 160px 220px;
+    grid-template-columns: 150px auto 90px 140px 150px 200px;
     color: $bottomtext;
     font-size: 20px; 
+    position: fixed;
    
     
     
@@ -30,5 +31,6 @@ header{
 
     a{
         color: $bottomtext;
+        text-decoration: none ;
     }
 }
