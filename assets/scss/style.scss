@@ -5,8 +5,12 @@
 
 
 
+@import "header";
+
+
+@import "footer";
+@import "layout";
+@import "chambre";
 
 @import "helpers/mixins";
-@import "layout";
-@import "footer.scss";
-@import "chambre";
+

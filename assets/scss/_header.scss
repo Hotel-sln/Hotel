@@ -1,0 +1,34 @@
+header{
+    box-shadow: 125px 25px 25px red;
+    background-color: $backgroundfooter;
+    display: grid;
+    grid-template-columns: 150px auto 110px 160px 160px 220px;
+    color: $bottomtext;
+    font-size: 20px; 
+   
+    
+    
+    
+
+    img{
+        height:100px;
+        width:100px;
+    }
+
+    h1{
+        font-size: 70px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    a{
+        color: $bottomtext;
+    }
+}
