@@ -1,14 +1,21 @@
 body{
-    color: white;
+    
     .chambre{
-        padding-top: 35px;
+        color: $textcolor;
+        padding-top: 135px;
         background-color: $bgmain;
-
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        
             
             section{
                 display: grid;
-                grid-template-rows: auto 55px;
+                grid-template-rows: auto 85px;
+                grid-column: 2;
                 justify-content: center;
+                
+        
+                
 
                     figure{
                         display: flex;
@@ -57,13 +64,13 @@ body{
             }
 
             .section1{
-    
-                grid-template-columns:  45% 25% ;
+               
+                 grid-template-columns:  75% 25% ;
             
                 }
             .section2{
-            
-                grid-template-columns:  25% 45% ;
+              
+                grid-template-columns:  25% 75% ;
                 
                 }
 
