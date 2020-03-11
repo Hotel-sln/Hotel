@@ -1,11 +1,13 @@
 header{
     width: 100%;
-    background-color: $backgroundfooter;
+    background-color: $backgroundheader;
     display: grid;
     grid-template-columns: 150px auto 90px 140px 150px 200px;
-    color: $bottomtext;
+    color: $headertext;
     font-size: 20px; 
     position: fixed;
+    padding-bottom: 3px;
+    border-bottom: solid 2px $headertext ;
    
     
     
