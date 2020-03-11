@@ -74,7 +74,14 @@ body{
                 
                 }
 
-        
+                .logo {
+                    width: 50px;
+                }
+                .services {
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 45px;
+                }
     }
 }
 /* classes specifique de la pages chambre */
