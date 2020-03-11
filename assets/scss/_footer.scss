@@ -1,0 +1,45 @@
+body{
+
+        
+        .footermain{ 
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+            background-color: $backgroundfooter;
+            color: $bottomtext;
+            .feetlist{
+                margin-top: 3px;
+                text-align: left;
+                list-style: none;
+                padding: 5px;
+                font-size: $bigtext;
+                margin-bottom: 0;
+                .feetelem{
+                    margin-top: 8px;
+                    margin-left: 25px;
+                    .network{
+                        color: $bottomtext; 
+                    }
+                }
+                
+            }.btnfeet {
+                background-color:unset; 
+                border: none; 
+                color: $bottomtext; 
+                padding: 6px 8px; 
+                cursor: pointer; 
+              }
+             .feetpic{
+                margin-top: 15px;
+                max-height: 150px;
+                max-width: 200px;
+             } 
+            .legal{
+                display: flex;
+                flex-direction: column;
+                justify-content:flex-end;
+                color: $bottomtext;
+                margin-bottom: 0; 
+            }
+        }
+    }
