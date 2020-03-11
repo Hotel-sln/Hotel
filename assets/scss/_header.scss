@@ -2,17 +2,21 @@ header {
     width: 100%;
     background-color: $backgroundheader;
     display: grid;
-    grid-template-columns: 150px auto 90px 140px 150px 200px;
+    grid-template-columns: 150px auto 90px 140px 150px 100px 100px;
     color: $headertext;
     font-size: 20px;
     position: fixed;
     padding-bottom: 3px;
     border-bottom: solid 2px $headertext;
     z-index: 9000;
-    img {
-        height: 100px;
-        width: 100px;
-    }
+
+    
+        .logo {
+            height: 100px;
+            width: 100px;
+        }
+    
+
     h1 {
         font-size: 70px;
         display: flex;
@@ -28,4 +32,15 @@ header {
         color: $bottomtext;
         text-decoration: none;
     }
+
+    
+        .meteolang{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 50% 50%;
+            button{
+                background: none;
+                border: none;
+            }
+        }
 }
