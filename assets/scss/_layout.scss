@@ -1,1 +1,75 @@
+/*first page*/
 
+html {
+    font-size: $font-size;
+    font-family: $font-family;
+    color: $bgsection;
+}
+
+body {
+    main {
+        background-color: $bgmain;
+        .descriptionville {
+            display: flex;
+            text-align: justify;
+            align-items: center;
+        }
+        .bannier {
+            width: 100%;
+            height: 400px;
+        }
+        article {
+            flex-basis: 70%;
+        }
+        .menton {
+            padding: 10px;
+            width: 400px;
+        }
+        .services {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .logo {
+            width: 50px;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            padding: 45px;
+        }
+        #slider {
+            height: 50vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .slide {
+                height: inherit;
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                transition: opacity 0.5s;
+                opacity: 0;
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .sliderbutton {
+                position: relative;
+                z-index: 99;
+                cursor: pointer;
+            }
+        }
+    }
+}
