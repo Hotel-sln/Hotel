@@ -3,12 +3,12 @@
 html {
     font-size: $font-size;
     font-family: $font-family;
-    color: $text-primary;
+    color: $bgsection;
 }
 
 body {
     main {
-        background-color: $bgcolor;
+        background-color: $bgmain;
         .descriptionville {
             display: flex;
             text-align: justify;
@@ -36,6 +36,7 @@ body {
         .services {
             display: flex;
             justify-content: space-around;
+            padding: 45px;
         }
         #slider {
             height: 50vh;
@@ -43,7 +44,6 @@ body {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 30px;
             .slide {
                 height: inherit;
                 overflow: hidden;
