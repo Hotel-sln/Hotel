@@ -18,14 +18,14 @@ body{
                     margin-top: 8px;
                     margin-left: 25px;
                     .network{
-                        color: white; 
+                        color: $bottomtext; 
                     }
                 }
                 
             }.btnfeet {
                 background-color:unset; 
                 border: none; 
-                color: white; 
+                color: $bottomtext; 
                 padding: 6px 8px; 
                 cursor: pointer; 
               }
@@ -38,7 +38,7 @@ body{
                 display: flex;
                 flex-direction: column;
                 justify-content:flex-end;
-                color: white;
+                color: $bottomtext;
                 margin-bottom: 0; 
             }
         }

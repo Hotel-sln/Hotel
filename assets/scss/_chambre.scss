@@ -12,6 +12,7 @@ body{
                 display: grid;
                 grid-template-rows: auto 85px;
                 grid-column: 2;
+                justify-content: center;
                 
         
                 
@@ -64,12 +65,12 @@ body{
 
             .section1{
                
-                grid-template-columns:  80% 20% ;
+                 grid-template-columns:  75% 25% ;
             
                 }
             .section2{
               
-                grid-template-columns:  20% 80% ;
+                grid-template-columns:  25% 75% ;
                 
                 }
 
