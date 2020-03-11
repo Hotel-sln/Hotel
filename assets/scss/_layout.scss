@@ -10,14 +10,7 @@ body {
     main {
         background-color: $bgmain;
 
-        .meteo{
-            display: grid;
-            grid-template-columns: auto 888 auto ;
-
-            p{
-                grid-column: 2;
-            }
-        }
+        
 
         .descriptionville {
             display: flex;
