@@ -12,30 +12,27 @@ body {
         .descriptionville {
             display: flex;
             text-align: justify;
+            align-items: center;
         }
         .bannier {
             width: 100%;
             height: 400px;
+            position: relative;
+            object-fit: cover;
         }
         article {
             flex-basis: 70%;
         }
         img {
             width: 400px;
+        }
+        .menton {
             padding: 10px;
         }
-        .photoshotel,
         .services {
             display: flex;
             flex-direction: row;
             justify-content: center;
-        }
-        .incline {
-            width: 100px;
-            height: 250px;
-            padding: 100px;
-            display: flex;
-            justify-content: space-around;
         }
         .logo {
             width: 50px;
@@ -43,6 +40,40 @@ body {
         .services {
             display: flex;
             justify-content: space-around;
+        }
+        #slider {
+            height: 50vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            .slide {
+                height: inherit;
+                overflow: hidden;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                transition: opacity 0.5s;
+                opacity: 0;
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .sliderbutton {
+                position: relative;
+                z-index: 99;
+                cursor: pointer;
+            }
         }
     }
 }
