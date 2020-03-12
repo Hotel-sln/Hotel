@@ -9,6 +9,7 @@ html {
 body {
     main {
         background-color: $bgmain;
+        
 
         
 
@@ -16,6 +17,7 @@ body {
             display: flex;
             text-align: justify;
             align-items: center;
+            article{padding: 0px 15px 0px 30px;}
         }
         .bannier {
             width: 100%;
