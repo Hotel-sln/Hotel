@@ -40,6 +40,19 @@ body {
             display: flex;
             justify-content: space-around;
             padding: 45px;
+            color: $colorservice;
+                div{
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    p{
+                        display: flex;
+                        justify-content: center;
+                    }
+                  
+                    
+                }
         }
         #slider {
             height: 50vh;
