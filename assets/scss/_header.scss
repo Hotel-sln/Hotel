@@ -21,7 +21,7 @@ header {
     flex-direction: column;
     justify-content: center;
   }
-  p {
+  .lien {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,7 +41,7 @@ header {
       justify-content: center;
       padding-bottom: 25px;
 
-      p {
+      .lien {
         width: 89%;
       }
     }
