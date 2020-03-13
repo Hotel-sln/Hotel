@@ -33,7 +33,9 @@ header {
   .bouton {
     color: $bottomtext;
     text-decoration: none;
-    padding: 3px;
+    padding: 4px;
+    max-width: fit-content;
+    
     &:hover{
      background-color: $headertext;
       border: 1px black none;
