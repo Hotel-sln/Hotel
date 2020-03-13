@@ -9,10 +9,15 @@ html {
 body {
     main {
         background-color: $bgmain;
+        
+
+        
+
         .descriptionville {
             display: flex;
             text-align: justify;
             align-items: center;
+            article{padding: 0px 15px 0px 30px;}
         }
         .bannier {
             width: 100%;
@@ -37,6 +42,19 @@ body {
             display: flex;
             justify-content: space-around;
             padding: 45px;
+            color: $colorservice;
+                div{
+                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    p{
+                        display: flex;
+                        justify-content: center;
+                    }
+                  
+                    
+                }
         }
         #slider {
             height: 50vh;

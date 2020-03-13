@@ -5,7 +5,7 @@ body{
         padding-top: 135px;
         background-color: $bgmain;
         display: grid;
-        grid-template-columns: 10% auto 10%;
+        grid-template-columns: 8% auto 8%;
         
             
             section{
@@ -74,7 +74,14 @@ body{
                 
                 }
 
-        
+                .logo {
+                    width: 50px;
+                }
+                .services {
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 45px;
+                }
     }
 }
 /* classes specifique de la pages chambre */

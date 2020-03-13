@@ -1,139 +1,297 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-
-
-<head>
+  <head>
     <title>Citronotel</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <!-- ici commence le contenu pour l'utilisateur-->
 
     <header>
-        <a href="Index.html"><img src="assets/img/lemon.png" alt="logo"></a>
-        <h1>L'hotel Bogdanoff</h1>
-        <p><a href="Index.html"> Accueil </a></p>
-        <p> <a href="Chambre.html">Les chambres </a></p>
-        <p>Nous contacter</p>
-        <p>A venir</p>
+      <a href="Index.html"
+        ><img class="logo" src="assets/img/lemon.png" alt="logomenton"
+      /></a>
+      <h1 class="tittle">L'hotel Bogdanoff</h1>
+      <nav class="lien"><a href="Index.html"> Accueil </a></nav>
+      <nav class="lien"><a href="chambre.html">Les chambres </a></nav>
+      <nav class="lien">Nous contacter</nav>
+      <nav class="lien">A venir</nav>
+      <div class="meteolang">
+        <button id="myBtn">
+          <img
+            src="assets/img/meteo.png"
+            alt="meteo"
+            width="70%"
+            height="90%"
+          />
+        </button>
 
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <div class="closex"><span class="close">&times;</span></div>
+            <div class="meteo">
+              <p>
+                <iframe
+                  seamless
+                  width="auto"
+                  height="336"
+                  frameborder="0"
+                  src="https://www.infoclimat.fr/public-api/mixed/iframeSLIDE?_ll=43.77649,7.50435&_inc=WyJNZW50b24iLCIxNyIsIjI5OTQ0OTciLCJGUiJd&_auth=BB4DFA5wU3EALQE2DnhWfwJqUmcAdgAnVipSMQtlVyoEYFY1BGFcOgBmVCkFKlVmUn8CZwE%2BBzsHZwFjDnxTLwRlA24OZFM1AGsBag45Vn0CLlIvAD4AJ1YqUjQLY1c9BHlWMwRnXD4AcVQ1BTBVf1JlAmsBIQcgB2UBYw5rUzMEbgNjDm1TMwBuAWcOIVZ9AjRSZwA5ADFWNVI3C2FXMgRiVjsEMVw8AGdUNwUrVWVSaQJnAT8HNgdhAWEOZVMvBHgDHg4eUywALwEhDmtWJAIsUmcAYQBs&_c=c88c412412dc0f8ed4548f9f4050993b"
+                ></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button>
+            <img
+              src="assets/img/fr.png"
+              alt="lang"
+              width="40px"
+              height="40px"
+            />
+          </button>
+          <div class="dropdown-content">
+            <a href="#"
+              ><img
+                src="assets/img/fr.png"
+                alt="lang"
+                width="40px"
+                height="40px"
+            /></a>
+            <a href="#"
+              ><img
+                src="assets/img/ita.png"
+                alt="lang"
+                width="40px"
+                height="40px"
+            /></a>
+            <a href="#"
+              ><img
+                src="assets/img/eng.png"
+                alt="lang"
+                width="40px"
+                height="40px"
+            /></a>
+          </div>
+        </div>
+      </div>
     </header>
 
-
     <main>
-        <section id="banniere">
-            <img src="assets/img/menton-colorer.jpg" alt="image bannière" class="bannier">
-        </section>
+      <section id="banniere">
+        <img
+          src="assets/img/menton-colorer.jpg"
+          alt="image bannière"
+          class="bannier"
+        />
+      </section>
 
-        <section class="descriptionville">
-            <article>
-                <p>Ville préservée, située aux confins de l’Italie, de la Principauté de Monaco et du Comté de Nice, Menton bénéficie d’un microclimat subtropical bienfaiteur qui lui fait presque ignorer l’hiver. Menton est classée « station d’intérêt touristique
-                    ». Ce statut permet entre autres aux commerces de détail d’ouvrir le dimanche. Découvrir Menton ou y vivre, c’est se laisser séduire par la sérénité et le charme d’un lieu à nul autre pareil. Sur cette terre privilégiée, enclavée et
-                    pourtant ouverte sur le monde, rien n’est ordinaire. Pour qui prend la peine de comprendre la cité, son histoire et la générosité de ses habitants, que l’on devine à chaque recoin des ruelles ocre chauffées par le soleil azuré, un
-                    humanisme rare se révèle alors. Il nous montre le chemin de l’harmonie, de ce bonheur simple mais onirique qu’Albert Camus a décrit comme « l’accord de la terre et du pied ». Ville d’Art et d’Histoire, ville jardin ou encore ville
-                    de culture, Menton est un Eden préservé qui n’en regarde pas moins vers son avenir sur la Riviera, réussissant l’alchimie parfaite entre toutes les beautés du monde. <br> Bienvenue à Menton où, vraiment, rien n’est ordinaire.
+      <section class="descriptionville">
+        <article>
+          <p>
+            Ville préservée, située aux confins de l’Italie, de la Principauté
+            de Monaco et du Comté de Nice, Menton bénéficie d’un microclimat
+            subtropical bienfaiteur qui lui fait presque ignorer l’hiver. Menton
+            est classée « station d’intérêt touristique ». Ce statut permet
+            entre autres aux commerces de détail d’ouvrir le dimanche. Découvrir
+            Menton ou y vivre, c’est se laisser séduire par la sérénité et le
+            charme d’un lieu à nul autre pareil. Sur cette terre privilégiée,
+            enclavée et pourtant ouverte sur le monde, rien n’est ordinaire.
+            Pour qui prend la peine de comprendre la cité, son histoire et la
+            générosité de ses habitants, que l’on devine à chaque recoin des
+            ruelles ocre chauffées par le soleil azuré, un humanisme rare se
+            révèle alors. Il nous montre le chemin de l’harmonie, de ce bonheur
+            simple mais onirique qu’Albert Camus a décrit comme « l’accord de la
+            terre et du pied ». Ville d’Art et d’Histoire, ville jardin ou
+            encore ville de culture, Menton est un Eden préservé qui n’en
+            regarde pas moins vers son avenir sur la Riviera, réussissant
+            l’alchimie parfaite entre toutes les beautés du monde. <br />
+            Bienvenue à Menton où, vraiment, rien n’est ordinaire.
+          </p>
+        </article>
 
+        <aside>
+          <img
+            src="assets/img/baie-de-menton.jpg"
+            alt="photo menton"
+            class="menton"
+          />
+        </aside>
+      </section>
 
-                </p>
-            </article>
+      <div id="slider">
+        <button class="prev sliderbutton">&lt;</button>
+        <button class="next sliderbutton">&gt;</button>
+        <div class="slide">
+          <img src="assets/img/chambre.jpg" alt="chambre" />
+        </div>
+        <div class="slide">
+          <img src="assets/img/resto.jpg" alt="resto" />
+        </div>
+        <div class="slide">
+          <img src="assets/img/piscine.jpg" alt="piscine" />
+        </div>
+        <div class="slide">
+          <img src="assets/img/hall.jpg" alt="hall" />
+        </div>
+      </div>
 
-            <aside>
-                <img src="assets/img/baie-de-menton.jpg" alt="photo menton" class="menton">
-            </aside>
-        </section>
-
-
-        <div id="slider">
-            <button class="prev sliderbutton">&lt;</button>
-            <button class="next sliderbutton">&gt;</button>
-            <div class="slide">
-                <img src="assets/img/chambre.jpg" alt="chambre" />
-            </div>
-            <div class="slide">
-                <img src="assets/img/resto.jpg" alt="resto" />
-            </div>
-            <div class="slide">
-                <img src="assets/img/piscine.jpg" alt="piscine" />
-            </div>
-            <div class="slide">
-                <img src="assets/img/hall.jpg" alt="hall" />
-            </div>
+      <section class="services">
+        <div>
+          <p>
+            <img
+              src="assets/img/parking.png"
+              alt="parking"
+              title="Parking gratuit et sécurisé"
+              class="logo"
+            />
+          </p>
+          <p>
+            Parking gratuit<br />
+            et sécurisé
+          </p>
         </div>
 
+        <div>
+          <p>
+            <img
+              src="assets/img/handicape.png"
+              alt="accessibilité"
+              title="Accessibilité aux personnes handicapées"
+              class="logo"
+            />
+          </p>
+          <p>Accessibilité</p>
+        </div>
 
+        <div>
+          <p>
+            <img
+              src="assets/img/lit.png"
+              alt="chambre"
+              title="Chambre"
+              class="logo"
+            />
+          </p>
+          <p>Chambre</p>
+        </div>
 
-        <section class="services">
-            <div>
-                <img src="assets/img/parking.png" alt="parking" title="Parking gratuit et sécurisé" class="logo">
-            </div>
+        <div>
+          <p>
+            <img
+              src="assets/img/restauration.png"
+              alt="restauration"
+              title="Restauration"
+              class="logo"
+            />
+          </p>
+          <p>Restauration</p>
+        </div>
 
-            <div>
-                <img src="assets/img/handicape.png" alt="accessibilité" title="Accessibilité aux personnes handicapées" class="logo">
-            </div>
+        <div>
+          <p>
+            <img
+              src="assets/img/wifi.png"
+              alt="wifi"
+              title="Wifi gratuit"
+              class="logo"
+            />
+          </p>
+          <p>Wifi gratuit</p>
+        </div>
 
-            <div>
-                <img src="assets/img/lit.png" alt="chambre" title="Chambre" class="logo">
-            </div>
+        <div>
+          <p>
+            <img
+              src="assets/img/animaux.png"
+              alt="animaux"
+              title="Animaux acceptés"
+              class="logo"
+            />
+          </p>
+          <p>Animaux acceptés</p>
+        </div>
 
-            <div>
-                <img src="assets/img/restauration.png" alt="restauration" title="Restauration" class="logo">
-            </div>
-
-            <div>
-                <img src="assets/img/wifi.png" alt="wifi" title="Wifi gratuit" class="logo">
-            </div>
-
-            <div>
-                <img src="assets/img/animaux.png" alt="animaux" title="Animaux acceptés" class="logo">
-            </div>
-
-            <div>
-                <img src="assets/img/piscine.png" alt="piscine" title="Piscine chauffée" class="logo">
-            </div>
-        </section>
-
+        <div>
+          <p>
+            <img
+              src="assets/img/piscine.png"
+              alt="piscine"
+              title="Piscine chauffée"
+              class="logo"
+            />
+          </p>
+          <p>Piscine chauffée</p>
+        </div>
+      </section>
     </main>
 
     <footer class="footermain">
+      <ul class="feetlist">
+        Une question ? Nous contacter:
+        <li class="feetelem">9 impasse du Scie Tronc</li>
+        <li class="feetelem">(+33)04 69 42 06 91</li>
+        <li class="feetelem">Hotel-Menton@hotmail.fr</li>
+        <li class="feetelem">
+          <span class="network">
+            <button
+              class="btnfeet"
+              onclick="window.location.href = 'https://twitter.com/';"
+            >
+              <i class="fab fa-twitter-square fa-2x"> </i>
+            </button>
+            <button
+              class="btnfeet"
+              onclick="window.location.href = 'https://www.facebook.com/';"
+            >
+              <i class="fab fa-facebook-square fa-2x"></i>
+            </button>
+            <button
+              class="btnfeet"
+              onclick="window.location.href = 'https://www.instagram.com/';"
+            >
+              <i class="fab fa-instagram fa-2x"></i>
+            </button>
+          </span>
+        </li>
+      </ul>
+      <img
+        class="feetpic"
+        src="assets/img/Blason_ville_fr_Menton.svg.png"
+        alt="logo"
+      />
 
-        <ul class="feetlist"> Une question ? Nous contacter:
-            <li class="feetelem">9 impasse du Scie Tronc</li>
-            <li class="feetelem">(+33)04 69 42 06 91</li>
-            <li class="feetelem">Hotel-Menton@hotmail.fr </li>
-            <li class="feetelem">
-                <span class="network">
-                    <button class="btnfeet" onclick="window.location.href = 'https://twitter.com/';"><i class="fab fa-twitter-square fa-2x"> </i> </button>
-                    <button class="btnfeet" onclick="window.location.href = 'https://www.facebook.com/';"><i class="fab fa-facebook-square fa-2x"></i> </button>
-                    <button class="btnfeet" onclick="window.location.href = 'https://www.instagram.com/';"><i class="fab fa-instagram fa-2x"></i></button>
-          
-        </span>
-       
-      </li>
-    </ul>
-    <img class="feetpic" src="assets/img/Blason_ville_fr_Menton.svg.png" alt="logo">
-   
-    
-    <aside class="legal"><img class="icon_royal" src="assets/img/citron.png" alt="logo_citron">
-      Mentions légales - Plan du site - © L'escadev</aside>
+      <aside class="legal">
+        <img class="icon_royal" src="assets/img/citron.png" alt="logo_citron" />
+        Mentions légales - Plan du site - © L'escadev
+      </aside>
+    </footer>
 
-  </footer>
-   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
     <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
-    <script src="https://kit.fontawesome.com/86d37fbec9.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/86d37fbec9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/diapo.js"></script>
 
-</body>
-
+    <script src="assets/js/scripts.js"></script>
+  </body>
 </html>
-
