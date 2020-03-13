@@ -15,54 +15,11 @@
 <body>
   <!-- ici commence le contenu pour l'utilisateur-->
 
-  <header>
-    <a href="Index.html"
-      ><img class="logo" src="assets/img/lemon.png" alt="logomenton"
-    /></a>
-    <h1 class="tittle">L'hotel Bogdanoff</h1>
-    <nav class="lien"><a href="Index.html"> Accueil </a></nav>
-    <nav class="lien"><a href="chambre.html">Les chambres </a></nav>
-    <nav class="lien">Nous contacter</nav>
-    <nav class="lien">A venir</nav>
-    <div class="meteolang">
-      <button id="myBtn">
-        <img src="assets/img/meteo.png" alt="meteo" width="70%" height="90%" />
-      </button>
+  <?php
 
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <div class="closex"><span class="close">&times;</span></div>
-          <div class="meteo">
-            <p>
-              <iframe
-                seamless
-                width="auto"
-                height="336"
-                frameborder="0"
-                src="https://www.infoclimat.fr/public-api/mixed/iframeSLIDE?_ll=43.77649,7.50435&_inc=WyJNZW50b24iLCIxNyIsIjI5OTQ0OTciLCJGUiJd&_auth=BB4DFA5wU3EALQE2DnhWfwJqUmcAdgAnVipSMQtlVyoEYFY1BGFcOgBmVCkFKlVmUn8CZwE%2BBzsHZwFjDnxTLwRlA24OZFM1AGsBag45Vn0CLlIvAD4AJ1YqUjQLY1c9BHlWMwRnXD4AcVQ1BTBVf1JlAmsBIQcgB2UBYw5rUzMEbgNjDm1TMwBuAWcOIVZ9AjRSZwA5ADFWNVI3C2FXMgRiVjsEMVw8AGdUNwUrVWVSaQJnAT8HNgdhAWEOZVMvBHgDHg4eUywALwEhDmtWJAIsUmcAYQBs&_c=c88c412412dc0f8ed4548f9f4050993b"
-              ></iframe>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button>
-          <img src="assets/img/fr.png" alt="lang" width="40px" height="40px" />
-        </button>
-        <div class="dropdown-content">
-          <a href="#"
-            ><img src="assets/img/eng.png" alt="lang" width="40px" height="40px"
-          /></a>
-          <a href="#"
-            ><img src="assets/img/ita.png" alt="lang" width="40px" height="40px"
-          /></a>
-          <a href="#"
-            ><img src="assets/img/fr.png" alt="lang" width="40px" height="40px"
-          /></a>
-        </div>
-      </div>
-    </div>
-  </header>
+Include 'header.php';
+
+?>
 
   <main class="chambre">
     <section class="section1">
@@ -252,46 +209,11 @@
     </section>
   </main>
 
-  <footer class="footermain">
-    <ul class="feetlist">
-      Une question ? Nous contacter:
-      <li class="feetelem">9 impasse du Scie Tronc</li>
-      <li class="feetelem">(+33)04 69 42 06 91</li>
-      <li class="feetelem">Hotel-Menton@hotmail.fr</li>
-      <li class="feetelem">
-        <span class="network">
-          <button
-            class="btnfeet"
-            onclick="window.location.href = 'https://twitter.com/';"
-          >
-            <i class="fab fa-twitter-square fa-2x"> </i>
-          </button>
-          <button
-            class="btnfeet"
-            onclick="window.location.href = 'https://www.facebook.com/';"
-          >
-            <i class="fab fa-facebook-square fa-2x"></i>
-          </button>
-          <button
-            class="btnfeet"
-            onclick="window.location.href = 'https://www.instagram.com/';"
-          >
-            <i class="fab fa-instagram fa-2x"></i>
-          </button>
-        </span>
-      </li>
-    </ul>
-    <img
-      class="feetpic"
-      src="assets/img/Blason_ville_fr_Menton.svg.png"
-      alt="logo"
-    />
+  <?php
 
-    <aside class="legal">
-      <img class="icon_royal" src="assets/img/citron.png" alt="logo_citron" />
-      Mentions légales - Plan du site - © L'escadev
-    </aside>
-  </footer>
+Include 'footer.php';
+
+?>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

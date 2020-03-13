@@ -2,10 +2,11 @@ body{
     
     .chambre{
         color: $textcolor;
-        padding-top: 135px;
+        padding-top: 160px;
         background-color: $bgmain;
         display: grid;
         grid-template-columns: 8% auto 8%;
+        
         
             
             section{
@@ -19,7 +20,10 @@ body{
 
                     figure{
                         display: flex;
+                        flex-direction: column;
                         justify-content: center;
+                        margin-left: auto;
+                        margin-right: auto;
                         .imgchambre{
                             border-radius: 100px;
                             overflow: hidden;
