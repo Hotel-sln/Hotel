@@ -59,7 +59,17 @@ body{
                         }
                         
                     }
-                    
+                    .booking{
+                 
+                        display: flex;
+                        justify-content: center;
+                        background-color:$bgsection;
+                        padding-top: 15px;
+                        background-color: $bgsection;
+                        border-radius: 10px;
+                        box-shadow: 10px 5px 5px $boxs  ;
+                        padding:  15px;
+                    }        
                 
             }
 
