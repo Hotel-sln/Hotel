@@ -1,4 +1,8 @@
-body{
-    background-color: black;
-    color: blanchedalmond;
-}
+@import "variables/reset";
+@import "variables/fonts";
+@import "variables/colors";
+@import "layout";
+@import "header";
+@import "footer";
+@import "layout";
+@import "chambre";

@@ -1,0 +1,90 @@
+body{
+    
+    .chambre{
+        color: $textcolor;
+        padding-top: 135px;
+        background-color: $bgmain;
+        display: grid;
+        grid-template-columns: 8% auto 8%;
+        
+            
+            section{
+                display: grid;
+                grid-template-rows: auto 85px;
+                grid-column: 2;
+                justify-content: center;
+                
+        
+                
+
+                    figure{
+                        display: flex;
+                        justify-content: center;
+                        .imgchambre{
+                            border-radius: 100px;
+                            overflow: hidden;
+                            box-shadow: 10px 5px 5px $boxs ;
+                            
+                        }
+                        
+                    }
+                
+                    .description {
+                        padding-top: 15px;
+                        background-color: $bgsection;
+                        border-radius: 10px;
+                        box-shadow: 10px 5px 5px $boxs  ;
+                        padding:  15px;
+
+                        display: grid;
+                        grid-template-rows: auto 25px;
+                        grid-template-columns: 25% auto 20%;
+
+                        .txtchambre{
+                            grid-column: 1 / span 3; 
+                            grid-row: 1;
+                        }
+
+                        .prix{
+                            margin-top: 10px;
+                            grid-column: 1 ; 
+                            grid-row: 2;
+
+                        }
+                        .star{
+                            width:110px ;
+                            height: 25px;
+                            grid-column: 3; 
+                            grid-row: 2;
+                        }
+                        
+                    }
+                    
+                
+            }
+
+            .section1{
+               
+                 grid-template-columns:  75% 25% ;
+            
+                }
+            .section2{
+              
+                grid-template-columns:  25% 75% ;
+                
+                }
+
+                .logo {
+                    width: 50px;
+                }
+                .services {
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 45px;
+                }
+    }
+}
+/* classes specifique de la pages chambre */
+
+
+
