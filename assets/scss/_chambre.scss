@@ -6,8 +6,8 @@ body{
         background-color: $bgmain;
         display: grid;
         grid-template-columns: 10% auto 10%;
+         
         
-            
             section{
                 display: grid;
                 grid-template-rows: auto 85px;
@@ -15,8 +15,8 @@ body{
                 justify-content: center;
                 
         
-                
 
+                
                     figure{
                         display: flex;
                         justify-content: center;
@@ -59,7 +59,18 @@ body{
                         }
                         
                     }
-                    
+                    .booking{
+                   
+                        display: flex;
+                        justify-content: center;
+                        background-color:$bgsection;
+                        padding-top: 15px;
+                        background-color: $bgsection;
+                        border-radius: 10px;
+                        box-shadow: 10px 5px 5px $boxs  ;
+                        padding:  15px;
+                    }
+       
                 
             }
 
