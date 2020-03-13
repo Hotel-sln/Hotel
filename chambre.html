@@ -1,265 +1,177 @@
 <!DOCTYPE html>
 
 <head>
-  <title>Chambres</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, shrink-to-fit=no"
-  />
+    <title>Chambres</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
 </head>
 
 <body>
-  <!-- ici commence le contenu pour l'utilisateur-->
+    <!-- ici commence le contenu pour l'utilisateur-->
 
-  <header>
-    <a href="Index.html"
-      ><img class="logo" src="assets/img/lemon.png" alt="logomenton"
-    /></a>
-    <h1 class="tittle">L'hôtel Bogdanoff</h1>
-    <nav class="lien"><a href="Index.html"> Accueil </a></nav>
-    <nav class="lien"><a href="chambre.html">Les chambres </a></nav>
-    <nav class="lien">Nous contacter</nav>
-    <nav class="lien">A venir</nav>
-    <div class="meteolang">
-      <button id="myBtn">
-        <img src="assets/img/meteo.png" alt="meteo" width="70%" height="90%" />
+    <header>
+        <a href="Index.html"><img class="logo" src="assets/img/lemon.png" alt="logomenton" /></a>
+        <h1 class="tittle">L'hôtel Bogdanoff</h1>
+        <nav class="lien"><a class="bouton" href="Index.html"> Accueil </a></nav>
+        <nav class="lien"><a class="bouton" href="chambre.html">Les chambres </a></nav>
+        <nav class="lien"><a class="bouton" href="">Nous contacter</a></nav>
+        <nav class="lien"><a class="bouton" href="">A venir</a></nav>
+        <div class="meteolang">
+            <button id="myBtn">
+        <img
+          src="assets/img/meteo.png"
+          alt="meteo"
+          width="70%"
+          height="90%"
+        />
       </button>
 
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <div class="closex"><span class="close">&times;</span></div>
-          <div class="meteo">
-            <p>
-              <iframe
-                seamless
-                width="auto"
-                height="336"
-                frameborder="0"
-                src="https://www.infoclimat.fr/public-api/mixed/iframeSLIDE?_ll=43.77649,7.50435&_inc=WyJNZW50b24iLCIxNyIsIjI5OTQ0OTciLCJGUiJd&_auth=BB4DFA5wU3EALQE2DnhWfwJqUmcAdgAnVipSMQtlVyoEYFY1BGFcOgBmVCkFKlVmUn8CZwE%2BBzsHZwFjDnxTLwRlA24OZFM1AGsBag45Vn0CLlIvAD4AJ1YqUjQLY1c9BHlWMwRnXD4AcVQ1BTBVf1JlAmsBIQcgB2UBYw5rUzMEbgNjDm1TMwBuAWcOIVZ9AjRSZwA5ADFWNVI3C2FXMgRiVjsEMVw8AGdUNwUrVWVSaQJnAT8HNgdhAWEOZVMvBHgDHg4eUywALwEhDmtWJAIsUmcAYQBs&_c=c88c412412dc0f8ed4548f9f4050993b"
-              ></iframe>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="dropdown">
-        <button>
-          <img src="assets/img/fr.png" alt="lang" width="40px" height="40px" />
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="closex"><span class="close">&times;</span></div>
+                    <div class="meteo">
+                        <p>
+                            <iframe seamless width="100%" height="336" frameborder="0" src="https://www.infoclimat.fr/public-api/mixed/iframeSLIDE?_ll=43.77649,7.50435&_inc=WyJNZW50b24iLCIxNyIsIjI5OTQ0OTciLCJGUiJd&_auth=BB4DFA5wU3EALQE2DnhWfwJqUmcAdgAnVipSMQtlVyoEYFY1BGFcOgBmVCkFKlVmUn8CZwE%2BBzsHZwFjDnxTLwRlA24OZFM1AGsBag45Vn0CLlIvAD4AJ1YqUjQLY1c9BHlWMwRnXD4AcVQ1BTBVf1JlAmsBIQcgB2UBYw5rUzMEbgNjDm1TMwBuAWcOIVZ9AjRSZwA5ADFWNVI3C2FXMgRiVjsEMVw8AGdUNwUrVWVSaQJnAT8HNgdhAWEOZVMvBHgDHg4eUywALwEhDmtWJAIsUmcAYQBs&_c=c88c412412dc0f8ed4548f9f4050993b"></iframe>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button>
+          <img
+            src="assets/img/fr.png"
+            alt="lang"
+            width="40px"
+            height="40px"
+          />
         </button>
-        <div class="dropdown-content">
-          <a href="#"
-            ><img src="assets/img/eng.png" alt="lang" width="40px" height="40px"
-          /></a>
-          <a href="#"
-            ><img src="assets/img/ita.png" alt="lang" width="40px" height="40px"
-          /></a>
-          <a href="#"
-            ><img src="assets/img/fr.png" alt="lang" width="40px" height="40px"
-          /></a>
+                <div class="dropdown-content">
+                    <a href="#"><img src="assets/img/fr.png" alt="lang" width="40px" height="40px" /></a>
+                    <a href="#"><img src="assets/img/ita.png" alt="lang" width="40px" height="40px" /></a>
+                    <a href="#"><img src="assets/img/eng.png" alt="lang" width="40px" height="40px" /></a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="chambre">
-    <section class="section1">
-      <div class="description">
-        <p class="txtchambre">
-          "l'hotel Boganoff vous acceuil dans un cadre merveilleux , cette suite
-          aves SPA et jaccuzzi sera vous satisfaire que ce soit pour une nuit
-          comme a la location longue duree. l'acess a cette chambre se fait par
-          un assenceur privatif, le service de chambre lui aussi sera privatif.
-          Ce pentahouse fera son petite effet sur toute celle que vous
-          ammennerez ... toute fois si vous venez en solo il sera possible d
-          avoir un tarif privilegier pour nos accommpagnatrice de luxe (cf. voir
-          modaliter a l acceuil). que se soit pour le plaisir de la nuit ou de
-          la de la vie cette chambre vous satisfera quoi qu'il se passe."
-        </p>
-        <p class="prix">A partir de 1855E</p>
-        <img class="star" src="assets/img/fullstar.png" />
-      </div>
-      <figure>
-        <a
-          href="https://www.megasb.fr/image/produkte/zoom/44178_bild_hauptbild/schlafzimmer+set-4+teilig-mit-140+er-bett.jpg"
-          height="400px"
-          width="400px"
-        >
-          <img
-            src="https://www.megasb.fr/image/produkte/zoom/44178_bild_hauptbild/schlafzimmer+set-4+teilig-mit-140+er-bett.jpg "
-            width="150px"
-            height="150px"
-            class="imgchambre"
-        /></a>
-      </figure>
-    </section>
+    <main class="chambre">
+        <section class="section1">
+            <div class="description">
+                <p class="txtchambre">
+                    L'hôtel Bogdanoff vous accueille dans un cadre merveilleux , cette suite avec SPA et jaccuzzi saura vous satisfaire que ce soit pour une nuit ou pour un séjour longue durée. L'accès à cette chambre se fait par un ascenseur privatif, le service de chambre
+                    lui aussi sera privatif. Ce penthouse fera son petit effet sur toutes celles que vous amènerez... Toutefois si vous venez seul il sera possible d'avoir un tarif privilégié pour nos accompagnatrices de luxe (cf. voir modalités à l'accueil).
+                    Que ce soit pour le plaisir d’une nuit ou un séjour longue durée cette chambre vous satisfera quoi qu'il se passe.
+                </p>
+                <p class="prix">À partir de 1855 €</p>
+            </div>
+            <figure>
+                <a href="https://www.megasb.fr/image/produkte/zoom/44178_bild_hauptbild/schlafzimmer+set-4+teilig-mit-140+er-bett.jpg" height="400px" width="400px">
+                    <img src="https://www.megasb.fr/image/produkte/zoom/44178_bild_hauptbild/schlafzimmer+set-4+teilig-mit-140+er-bett.jpg " width="150px" height="150px" class="imgchambre" /></a>
+            </figure>
+        </section>
 
-    <section class="section2">
-      <figure>
-        <a
-          href="https://www.megasb.fr/image/produkte/zoom/44178_bild_hauptbild/schlafzimmer+set-4+teilig-mit-140+er-bett.jpg"
-          height="400px"
-          width="400px"
-        >
-          <img
-            src="https://www.megasb.fr/image/produkte/zoom/44178_bild_hauptbild/schlafzimmer+set-4+teilig-mit-140+er-bett.jpg "
-            width="150px"
-            height="150px"
-            class="imgchambre"
-        /></a>
-      </figure>
-      <div class="description">
-        <p class="txtchambre">
-          "l'hotel Boganoff vous acceuil dans un cadre chaleureux, cette chambre
-          classic+ sera vous satisfaire que ce soit pour une nuit comme a la
-          location longue duree. L'hebergement est situer non loin des toilette
-          ce qui est fort pratique la nuit quand on a une petit envie. La suite
-          parental fera mouche pour toute les menagere grincheuse que vous
-          trouverez bon d'ammennerez ... toute fois si vous venez en solo
-          n'oublier pas que l'hotel est en partenariat avec une equipe de
-          professionelle de la luxure(cf. voir modaliter a l acceuil). Ce
-          logement modeste vus proposera de grand rangement ainsi que un espace
-          corde a linge. Que se soit pour les vacances ou un kidnapping cette
-          chambre vous satisfera quoi qu'il se passe."
-        </p>
-        <p class="prix">A partir de 65E</p>
-        <img class="star" src="assets/img/fullstar.png" />
-      </div>
-    </section>
+        <section class="section2">
+            <figure>
+                <a href="https://www.megasb.fr/image/produkte/zoom/44178_bild_hauptbild/schlafzimmer+set-4+teilig-mit-140+er-bett.jpg" height="400px" width="400px">
+                    <img src="https://www.megasb.fr/image/produkte/zoom/44178_bild_hauptbild/schlafzimmer+set-4+teilig-mit-140+er-bett.jpg " width="150px" height="150px" class="imgchambre" /></a>
+            </figure>
+            <div class="description">
+                <p class="txtchambre">
+                    L'hôtel Bogdanoff vous accueille dans un cadre chaleureux, cette chambre classic+ saura vous satisfaire que ce soit pour une nuit comme à la location longue durée. La chambre est située non loin des toilette ce qui est fort pratique la nuit quand on a
+                    une petit envie. La suite parentale fera mouche pour toutes les ménagères grincheuses que vous trouverez bon d'ammener... toutefois si vous venez en solo n'oubliez pas que l'hôtel est en partenariat avec une équipe de professionnelles
+                    de la luxure(cf. voir modalités à l'accueil). Ce logement modeste vous proposera de grands rangements ainsi qu'un espace corde à linge. Que ce soit pour les vacances ou un kidnapping cette chambre vous satisfera quoi qu'il se passe.
+                </p>
+                <p class="prix">À partir de 65 €</p>
+            </div>
+        </section>
 
-    <section class="section1">
-      <div class="description">
-        <p class="txtchambre">
-          "l'hotel Boganoff vous acceuil dans un cadre fantastique,qui ravira
-          les petits comme les grand ce model de chambre basé sur le film 50
-          nuance de grey sera parfait pour vos partie fine et / ou pour corriger
-          ceux qui vous accompagnerons. Vous satisfaire restera le plus gros
-          desir de notre hotel Que ce soit pour une nuit comme a la location
-          longue duree l'acess a cette chambre se fait par un couloir privé a
-          ses clients, le service de chambre lui aussi sera privatif. Pour les
-          chaud lapin demandeur il sera possible d avoir un tarif privilegier
-          pour nos accommpagnatrice de luxe (cf. voir modaliter a l acceuil).
-          que se soit pour le plaisir de la nuit ou durter de la vie cette
-          chambre vous satisfera quoi qu'il se passe."
-        </p>
-        <p class="prix">A partir de 255E</p>
-        <img class="star" src="assets/img/fullstar.png" />
-      </div>
-      <figure>
-        <a
-          href="https://www.megasb.fr/image/produkte/zoom/44178_bild_hauptbild/schlafzimmer+set-4+teilig-mit-140+er-bett.jpg"
-          height="400px"
-          width="400px"
-        >
-          <img
-            src="https://www.megasb.fr/image/produkte/zoom/44178_bild_hauptbild/schlafzimmer+set-4+teilig-mit-140+er-bett.jpg "
-            width="150px"
-            height="150px"
-            class="imgchambre"
-        /></a>
-      </figure>
-    </section>
+        <section class="section1">
+            <div class="description">
+                <p class="txtchambre">
+                    L'hôtel Bogdanoff vous accueille dans un cadre fantastique,qui ravira les petits comme les grands. Ce modèle de chambre basé sur le film 50 Nuances de Grey sera parfait pour vos parties fines et/ou pour corriger ceux et celles qui vous accompagnent. Vous
+                    satisfaire reste le plus gros désir de notre hôtel. Que ce soit pour une nuit comme pour un séjour longue durée. L'accès à cette chambre se fait par un couloir privé à ses clients, le service de chambre lui aussi sera privatif. Pour
+                    les chauds lapins demandeurs il sera possible d'avoir un tarif privilégié pour nos accompagnatrices de luxe (cf. voir modalités à l'accueil). Que ce soit pour le plaisir d’une nuit ou un séjour longue durée cette chambre vous satisfera
+                    quoi qu'il se passe.
+                </p>
+                <p class="prix">À partir de 255 €</p>
+            </div>
+            <figure>
+                <a href="https://www.megasb.fr/image/produkte/zoom/44178_bild_hauptbild/schlafzimmer+set-4+teilig-mit-140+er-bett.jpg" height="400px" width="400px">
+                    <img src="https://www.megasb.fr/image/produkte/zoom/44178_bild_hauptbild/schlafzimmer+set-4+teilig-mit-140+er-bett.jpg " width="150px" height="150px" class="imgchambre" /></a>
+            </figure>
+        </section>
+        <section class="section3">
+            <div class="booking">
+                <i class="fas fa-phone-alt"></i>
+                <p>&nbspAppelez le 0800 130 000 pour réserver.</p>
+            </div>
+        </section>
 
-    <section class="services">
-      <div>
-        <p>
-          <img
-            src="assets/img/parking.png"
-            alt="parking"
-            title="Parking gratuit et sécurisé"
-            class="logo"
-          />
-        </p>
-        <p>
-          Parking gratuit<br />
-          et sécurisé
-        </p>
-      </div>
+        <section class="services">
+            <div>
+                <p>
+                    <img src="assets/img/parking.png" alt="parking" title="Parking gratuit et sécurisé" class="logo" />
+                </p>
+                <p>
+                    Parking gratuit<br /> et sécurisé
+                </p>
+            </div>
 
-      <div>
-        <p>
-          <img
-            src="assets/img/handicape.png"
-            alt="accessibilité"
-            title="Accessibilité aux personnes handicapées"
-            class="logo"
-          />
-        </p>
-        <p>Accessibilité</p>
-      </div>
+            <div>
+                <p>
+                    <img src="assets/img/handicape.png" alt="accessibilité" title="Accessibilité aux personnes handicapées" class="logo" />
+                </p>
+                <p>Accessibilité</p>
+            </div>
 
-      <div>
-        <p>
-          <img
-            src="assets/img/lit.png"
-            alt="chambre"
-            title="Chambre"
-            class="logo"
-          />
-        </p>
-        <p>Chambre</p>
-      </div>
+            <div>
+                <p>
+                    <img src="assets/img/lit.png" alt="chambre" title="Chambre" class="logo" />
+                </p>
+                <p>Chambre</p>
+            </div>
 
-      <div>
-        <p>
-          <img
-            src="assets/img/restauration.png"
-            alt="restauration"
-            title="Restauration"
-            class="logo"
-          />
-        </p>
-        <p>Restauration</p>
-      </div>
+            <div>
+                <p>
+                    <img src="assets/img/restauration.png" alt="restauration" title="Restauration" class="logo" />
+                </p>
+                <p>Restauration</p>
+            </div>
 
-      <div>
-        <p>
-          <img
-            src="assets/img/wifi.png"
-            alt="wifi"
-            title="Wifi gratuit"
-            class="logo"
-          />
-        </p>
-        <p>Wifi gratuit</p>
-      </div>
+            <div>
+                <p>
+                    <img src="assets/img/wifi.png" alt="wifi" title="Wifi gratuit" class="logo" />
+                </p>
+                <p>Wifi gratuit</p>
+            </div>
 
-      <div>
-        <p>
-          <img
-            src="assets/img/animaux.png"
-            alt="animaux"
-            title="Animaux acceptés"
-            class="logo"
-          />
-        </p>
-        <p>Animaux acceptés</p>
-      </div>
+            <div>
+                <p>
+                    <img src="assets/img/animaux.png" alt="animaux" title="Animaux acceptés" class="logo" />
+                </p>
+                <p>Animaux acceptés</p>
+            </div>
 
-      <div>
-        <p>
-          <img
-            src="assets/img/piscine.png"
-            alt="piscine"
-            title="Piscine chauffée"
-            class="logo"
-          />
-        </p>
-        <p>Piscine chauffée</p>
-      </div>
-    </section>
-  </main>
+            <div>
+                <p>
+                    <img src="assets/img/piscine.png" alt="piscine" title="Piscine chauffée" class="logo" />
+                </p>
+                <p>Piscine chauffée</p>
+            </div>
+        </section>
+    </main>
 
-  <footer class="footermain">
-    <ul class="feetlist">
-      Une question ? Nous contacter:
-      <li class="feetelem">9 impasse du Scie Tronc</li>
-      <li class="feetelem">(+33)04 69 42 06 91</li>
-      <li class="feetelem">Hotel-Menton@hotmail.fr</li>
-      <li class="feetelem">
-        <span class="network">
+    <footer class="footermain">
+        <ul class="feetlist">
+            Une question ? Nous contacter:
+            <li class="feetelem">9 impasse du Scie Tronc</li>
+            <li class="feetelem">(+33)04 69 42 06 91</li>
+            <li class="feetelem">Hotel-Menton@hotmail.fr</li>
+            <li class="feetelem">
+                <span class="network">
           <button
             class="btnfeet"
             onclick="window.location.href = 'https://twitter.com/';"
@@ -279,36 +191,20 @@
             <i class="fab fa-instagram fa-2x"></i>
           </button>
         </span>
-      </li>
-    </ul>
-    <img
-      class="feetpic"
-      src="assets/img/Blason_ville_fr_Menton.svg.png"
-      alt="logo"
-    />
+            </li>
+        </ul>
+        <img class="feetpic" src="assets/img/Blason_ville_fr_Menton.svg.png" alt="logo" />
 
-    <aside class="legal">
-      <img class="icon_royal" src="assets/img/citron.png" alt="logo_citron" />
-      Mentions légales - Plan du site - © L'escadev
-    </aside>
-  </footer>
+        <aside class="legal">
+            <img class="icon_royal" src="assets/img/citron.png" alt="logo_citron" /> Mentions légales - Plan du site - © L'escadev
+        </aside>
+    </footer>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"
-  ></script>
-  <script src="assets/js/scripts.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/86d37fbec9.js" crossorigin="anonymous"></script>
 </body>
