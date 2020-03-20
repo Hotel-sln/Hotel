@@ -16,12 +16,12 @@
     <!-- ici commence le contenu pour l'utilisateur-->
 
     <header>
-      <a href="index_en.html"
+      <a href="index_en.php"
         ><img class="logo" src="assets/img/lemon.png" alt="logomenton"
       /></a>
       <h1 class="tittle">Bogdanoff Hotel</h1>
-      <nav class="lien"><a class="bouton" href="index_en.html"> Home </a></nav>
-      <nav class="lien"><a class="bouton" href="room.html">Bedroom</a></nav>
+      <nav class="lien"><a class="bouton" href="index_en.php"> Home </a></nav>
+      <nav class="lien"><a class="bouton" href="room.php">Bedroom</a></nav>
       <nav class="lien"><a class="bouton" href="">Contact</a></nav>
       <nav class="lien"><a class="bouton" href="">More to come</a></nav>
       <div class="meteolang">
@@ -60,7 +60,7 @@
             />
           </button>
           <div class="dropdown-content">
-            <a href="index.html"
+            <a href="index.php"
               ><img
                 src="assets/img/fr.png"
                 alt="lang"
@@ -74,7 +74,7 @@
                 width="40px"
                 height="40px"
             /></a>
-            <a href="index_en.html"
+            <a href="index_en.php"
               ><img
                 src="assets/img/eng.png"
                 alt="lang"
