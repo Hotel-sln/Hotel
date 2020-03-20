@@ -3,7 +3,7 @@
         <h1 class="tittle">L'hôtel Bogdanoff</h1>
         <nav class="lien"><a class="bouton" href="index.php"> Accueil </a></nav>
         <nav class="lien"><a class="bouton" href="chambre.php">Les chambres </a></nav>
-        <nav class="lien"><a class="bouton" href="">Nous contacter</a></nav>
+        <nav class="lien"><a class="bouton" href="reservation.php">Réservation</a></nav>
         <nav class="lien"><a class="bouton" href="">A venir</a></nav>
         <div class="meteolang">
             <button id="myBtn">
