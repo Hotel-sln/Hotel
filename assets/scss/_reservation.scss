@@ -1,0 +1,45 @@
+.reser{
+    height: 600px;
+    background-color: $bgmain;
+    display: flex;
+    justify-content: center;
+    
+
+    .center{
+        margin: 125px 0px 15px 0px;
+        width: 60%;
+        
+        background-color: $bgsection;
+        color: $textcolor;
+        border-radius: 15%;
+            div{
+                
+                margin-top: 10px;
+                
+                    h3{
+                        font-size: 36px;
+                        display: flex;
+                justify-content: center;
+                    }
+                    .form{
+                        display: grid;
+                        grid-template-columns: auto;
+                        grid-template-rows: auto;
+                        
+                        width: 70%;
+
+                        margin-left: auto;
+                        margin-right: auto;
+                        overflow: hidden;
+                        input{
+                            width: 99%;
+                        }
+                        .button{
+                            margin-top: 10px;
+                            width: 100% !important; 
+                        }
+
+                    }
+            }
+    }
+}
