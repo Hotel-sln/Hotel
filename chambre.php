@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+<html>
+
 <head>
     <title>Chambres</title>
     <!-- Required meta tags -->
@@ -131,3 +133,5 @@
     <script src="assets/js/scripts.js"></script>
     <script src="https://kit.fontawesome.com/86d37fbec9.js" crossorigin="anonymous"></script>
 </body>
+
+</html>
