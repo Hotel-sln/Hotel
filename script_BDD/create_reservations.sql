@@ -35,31 +35,12 @@ CREATE TABLE `reservations` (
   `date_depart` date NOT NULL,
   `chambre` int(11) NOT NULL,
   `nom` varchar(60) NOT NULL,
+  `prenom` varchar(60) NOT NULL,
+  `phone` int(15) not NULL,
+  `adresse` varchar(255) NOT NULL,
+  `ville` varchar(100) NOT NULL,
+  `categorie` varchar(20) NOT NULL,
   `hash_pass` varchar(255) NOT NULL,
   `date_reservation` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
---
--- Index pour les tables déchargées
---
-
---
--- Index pour la table `reservations`
---
-ALTER TABLE `reservations`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT pour les tables déchargées
---
-
---
--- AUTO_INCREMENT pour la table `reservations`
---
-ALTER TABLE `reservations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
