@@ -21,11 +21,23 @@
                         display: flex;
                 justify-content: center;
                     }
-                    p{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        margin: 10px 15px ;
+                    .form{
+                        display: grid;
+                        grid-template-columns: auto;
+                        grid-template-rows: auto;
+                        
+                        width: 70%;
+
+                        margin-left: auto;
+                        margin-right: auto;
+                        overflow: hidden;
+                        input{
+                            width: 99%;
+                        }
+                        .button{
+                            margin-top: 10px;
+                            width: 100% !important; 
+                        }
 
                     }
             }

@@ -18,22 +18,27 @@
                 <h3>Réservation</h3>
 
                 <form>
-                    <p>
+                    <div class="form">
                         <label>Nom :</label> <input type="text" name="pseudo" required />
-                        <label>Prénom :</label> <input type="text" name="pseudo" required/>
-                        <label>Mail :</label> <input type="text" name="pseudo" required/>
-                        <label>Adresse :</label> <input type="text" name="pseudo" required/>
-                        <label>Téléphone :</label> <input type="text" name="pseudo" required/>
-                        <label>Types de Chambres :</label> <select name="pays" id="pays" >
-                            <option value="france">Chambres1</option>
-                            <option value="espagne">Chambres2</option>
-                            <option value="italie">Chambres2</option>
-                           
-                        </select>
-                        <label>date de début</label> <input type="date" name="pseudo" required/>
-                        <label>date de fin</label> <input type="date" name="pseudo" required/>
-                        <input type="submit" value="Envoyer" />
-                    </p>
+                            <label>Prénom :</label> <input type="text" name="pseudo" required />
+                        <label>Mail :</label> <input type="text" name="pseudo" required />
+                            <label>Téléphone :</label> <input type="text" name="pseudo" required />
+                        
+                        <label>Adresse :</label> <input type="text" name="pseudo" required />
+                            <label>Ville :</label> <input type="text" name="pseudo" required />
+
+                        
+
+                        <label>Types de Chambres :</label> <select name="pays" id="pays">
+                                <option value="france">Chambres1</option>
+                                <option value="espagne">Chambres2</option>
+                                <option value="italie">Chambres2</option>
+
+                            </select>
+                        <label>Date de début</label> <input type="date" name="pseudo" required />
+                        <label>Date de fin</label> <input type="date" name="pseudo" required />
+                        <input class="button" type="submit" value="Envoyer" />
+                    </div>
 
                 </form>
             </div>
