@@ -1,3 +1,50 @@
+<?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL); 
+
+
+    $bdd = new PDO('mysql:host=localhost;dbname=hotel_menton','Guillaume', 'er45df12');
+    
+
+    if(isset($_POST['forminscription'])){
+             if(!empty($_POST['Nom']) AND !empty($_POST['Prenom']) AND !empty($_POST['mail']) AND !empty($_POST['Phone']) AND !empty($_POST['Adresse']) AND !empty($_POST['Ville']) AND !empty($_POST['Ddd']) AND !empty($_POST['Ddf']) ) {
+                     
+                $Prenom = htmlspecialchars($_POST['Prenom']);
+                $Nom = htmlspecialchars($_POST['Nom']);
+                $mail = htmlspecialchars($_POST['mail']);
+                $Phone = htmlspecialchars($_POST['Phone']);
+                $Adresse = htmlspecialchars($_POST['Adresse']);
+                $Ville = htmlspecialchars($_POST['Ville']);
+                $Chambres = htmlspecialchars($_POST['Chambres']);
+                $Ddd = htmlspecialchars($_POST['Ddd']);
+                $Ddf = htmlspecialchars($_POST['Ddf']);
+              
+
+                $req = $bdd->prepare("INSERT INTO reservations (email, date_entree, date_depart, chambre, nom, prenom, phone, adresse, ville) VALUES(:email, :date_entree, :date_depart, :chambre, :nom, :prenom, :phone, :adresse, :ville)");
+                $req->execute(array('email' => $mail, 
+                                    'date_entree' => $Ddd, 
+                                    'date_depart' =>$Ddf, 
+                                    'chambre' => $Chambres, 
+                                    'nom' => $Nom,
+                                    'prenom' => $Prenom,
+                                    'phone' => $Phone, 
+                                    'adresse' => $Adresse, 
+                                    'ville' => $Ville));
+               
+                
+                
+                
+                
+                
+                     }
+                     
+        }
+
+
+
+
+?>
+
 <!DOCTYPE html>
 
 <head>
@@ -17,28 +64,37 @@
             <div>
                 <h3>Réservation</h3>
 
-                <form>
+                <form method="post" action="">
                     <div class="form">
-                        <label>Nom :</label> <input type="text" name="pseudo" required />
-                            <label>Prénom :</label> <input type="text" name="pseudo" required />
-                        <label>Mail :</label> <input type="text" name="pseudo" required />
-                            <label>Téléphone :</label> <input type="text" name="pseudo" required />
+                        <label for="Nom">Nom :</label> <input id="Nom" type="text" name="Nom" placeholder="Nicolas"  />
+                            <label for="Prenom">Prénom :</label> <input id="Prenom" type="text" name="Prenom" placeholder="Sarkozy"  />
+                        <label for="Mail">Mail :</label> <input id="Mail" type="email" name="mail" placeholder="UMPforEver@bettencourt.fr"  />
+                            <label for="Tel">Téléphone :</label> <input id="Tel" type="text" name="Phone" placeholder="05 55 ..."  />
                         
-                        <label>Adresse :</label> <input type="text" name="pseudo" required />
-                            <label>Ville :</label> <input type="text" name="pseudo" required />
+                        <label for="Adresse">Adresse :</label> <input id="Adresse" type="text" name="Adresse" placeholder="Elysée"  />
+                            <label for="Ville">Ville :</label> <input id="Ville" type="text" name="Ville" placeholder="93000"  />
 
                         
 
-                        <label>Types de Chambres :</label> <select name="pays" id="pays">
-                                <option value="france">Chambres1</option>
-                                <option value="espagne">Chambres2</option>
-                                <option value="italie">Chambres2</option>
+                        <label for="Types">Types de Chambres :</label> <select id="Types" name="Chambres" >
+                                <option value="Chambre1">Chambres1</option>
+                                <option value="Chambre2">Chambres2</option>
+                                <option value="Chambre3">Chambres2</option>
 
                             </select>
-                        <label>Date de début</label> <input type="date" name="pseudo" required />
-                        <label>Date de fin</label> <input type="date" name="pseudo" required />
-                        <input class="button" type="submit" value="Envoyer" />
+                        <label for="Ddd">Date de début</label> <input id="Ddd" type="date" name="Ddd"  />
+                        <label for="Ddf">Date de fin</label> <input id="Ddf" type="date" name="Ddf"  />
+                        <input class="button" name="forminscription" type="submit" value="Envoyer" />
                     </div>
+
+                     <?php 
+                        if (isset($erreur)){
+                            echo $erreur;
+                        } elseif (isset($bravo)) {
+                            echo "reservation effectué";
+
+                        }
+                     ?>
 
                 </form>
             </div>
