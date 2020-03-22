@@ -5,6 +5,8 @@ error_reporting(E_ALL);
 
     $bdd = new PDO('mysql:host=localhost;dbname=hotel_menton','Guillaume', 'er45df12');
     
+                
+    
 
     if(isset($_POST['forminscription'])){
              if(!empty($_POST['Nom']) AND !empty($_POST['Prenom']) AND !empty($_POST['mail']) AND !empty($_POST['Phone']) AND !empty($_POST['Adresse']) AND !empty($_POST['Ville']) AND !empty($_POST['Ddd']) AND !empty($_POST['Ddf']) ) {
@@ -18,9 +20,11 @@ error_reporting(E_ALL);
                 $Chambres = htmlspecialchars($_POST['Chambres']);
                 $Ddd = htmlspecialchars($_POST['Ddd']);
                 $Ddf = htmlspecialchars($_POST['Ddf']);
-              
+                $Date = date('Y/m/d h:i:s ');
+                
+                
 
-                $req = $bdd->prepare("INSERT INTO reservations (email, date_entree, date_depart, chambre, nom, prenom, phone, adresse, ville) VALUES(:email, :date_entree, :date_depart, :chambre, :nom, :prenom, :phone, :adresse, :ville)");
+                $req = $bdd->prepare("INSERT INTO reservations (email, date_entree, date_depart, chambre, nom, prenom, phone, adresse, ville, date_reservation) VALUES(:email, :date_entree, :date_depart, :chambre, :nom, :prenom, :phone, :adresse, :ville, :date_reservation)");
                 $req->execute(array('email' => $mail, 
                                     'date_entree' => $Ddd, 
                                     'date_depart' =>$Ddf, 
@@ -29,7 +33,8 @@ error_reporting(E_ALL);
                                     'prenom' => $Prenom,
                                     'phone' => $Phone, 
                                     'adresse' => $Adresse, 
-                                    'ville' => $Ville));
+                                    'ville' => $Ville,
+                                    'date_reservation' => $Date));
                
                 
                 
@@ -79,7 +84,7 @@ error_reporting(E_ALL);
                         <label for="Types">Types de Chambres :</label> <select id="Types" name="Chambres" >
                                 <option value="Chambre1">Chambres1</option>
                                 <option value="Chambre2">Chambres2</option>
-                                <option value="Chambre3">Chambres2</option>
+                                <option value="Chambre3">Chambres3</option>
 
                             </select>
                         <label for="Ddd">Date de début</label> <input id="Ddd" type="date" name="Ddd"  />
