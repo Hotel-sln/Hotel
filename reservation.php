@@ -22,6 +22,8 @@ if (isset($_POST['forminscription'])) {
         $Ddd = htmlspecialchars($_POST['Ddd']);
         $Ddf = htmlspecialchars($_POST['Ddf']);
         $Date = date('Y/m/d h:i:s ');
+        $longueur = strlen($_POST['Phone']);
+        
        
 
 
@@ -73,6 +75,8 @@ if (isset($_POST['forminscription'])) {
 <body>
     <?php require_once('header.php'); ?>
 
+    
+
     <main class="reser">
         <div class="center">
             <div>
@@ -80,13 +84,13 @@ if (isset($_POST['forminscription'])) {
 
                 <form method="post" action="">
                     <div class="form">
-                        <label for="Nom">Nom :</label> <input id="Nom" type="text" name="Nom" placeholder="Nicolas" />
-                        <label for="Prenom">Prénom :</label> <input id="Prenom" type="text" name="Prenom" placeholder="Sarkozy" />
-                        <label for="Mail">Mail :</label> <input id="Mail" type="email" name="mail" placeholder="UMPforEver@bettencourt.fr" />
-                        <label for="Tel">Téléphone :</label> <input id="Tel" type="text" name="Phone" placeholder="05 55 ..." />
+                        <label for="Nom">Nom :</label> <input id="Nom" type="text" name="Nom" placeholder="Nicolas" required />
+                        <label for="Prenom">Prénom :</label> <input id="Prenom" type="text" name="Prenom" placeholder="Sarkozy" required />
+                        <label for="Mail">Mail :</label> <input id="Mail" type="email" name="mail" placeholder="UMPforEver@bettencourt.fr" required />
+                        <label for="Tel">Téléphone :</label> <input id="Tel" type="text" name="Phone" placeholder="05 55 ..." maxlength="15" required />
 
-                        <label for="Adresse">Adresse :</label> <input id="Adresse" type="text" name="Adresse" placeholder="Elysée" />
-                        <label for="Ville">Ville :</label> <input id="Ville" type="text" name="Ville" placeholder="93000" />
+                        <label for="Adresse">Adresse :</label> <input id="Adresse" type="text" name="Adresse" placeholder="Elysée" required />
+                        <label for="Ville">Ville :</label> <input id="Ville" type="text" name="Ville" placeholder="93000" maxlength="10" required />
 
 
 
@@ -96,8 +100,8 @@ if (isset($_POST['forminscription'])) {
                             <option value="Chambre3">Chambres3</option>
 
                         </select>
-                        <label for="Ddd">Date de début</label> <input id="Ddd" type="date" name="Ddd" />
-                        <label for="Ddf">Date de fin</label> <input id="Ddf" type="date" name="Ddf" />
+                        <label for="Ddd">Date de début</label> <input id="Ddd" type="date" name="Ddd" required />
+                        <label for="Ddf">Date de fin</label> <input id="Ddf" type="date" name="Ddf " required/>
                         <input class="button" name="forminscription" type="submit" value="Envoyer" />
                         <?php
                         if (isset($erreur)) {
@@ -105,6 +109,9 @@ if (isset($_POST['forminscription'])) {
                         } elseif (isset($bravo)) {
                             echo $bravo;
                         }
+                       
+       
+                        
                         ?>
                     </div>
 
