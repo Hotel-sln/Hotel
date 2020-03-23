@@ -3,7 +3,8 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 
-$bdd = new PDO('mysql:host=localhost;dbname=hotel_menton', 'Guillaume', 'er45df12');
+require_once('config.conf');
+$bdd = new PDO("mysql:host=" . $server . ";dbname=" . $name, $user, $passwd);
 
 
 
@@ -22,7 +23,8 @@ if (isset($_POST['forminscription'])) {
         $Ddd = htmlspecialchars($_POST['Ddd']);
         $Ddf = htmlspecialchars($_POST['Ddf']);
         $Date = date('Y/m/d h:i:s ');
-        $longueur = strlen($_POST['Phone']);
+        
+       
         
        
 
@@ -100,8 +102,8 @@ if (isset($_POST['forminscription'])) {
                             <option value="Chambre3">Chambres3</option>
 
                         </select>
-                        <label for="Ddd">Date de début</label> <input id="Ddd" type="date" name="Ddd" required />
-                        <label for="Ddf">Date de fin</label> <input id="Ddf" type="date" name="Ddf " required/>
+                        <label for="Ddd">Date de début</label> <input id="Ddd" type="date" name="Ddd"  />
+                        <label for="Ddf">Date de fin</label> <input id="Ddf" type="date" name="Ddf"/>
                         <input class="button" name="forminscription" type="submit" value="Envoyer" />
                         <?php
                         if (isset($erreur)) {
@@ -109,6 +111,7 @@ if (isset($_POST['forminscription'])) {
                         } elseif (isset($bravo)) {
                             echo $bravo;
                         }
+                        
                        
        
                         
