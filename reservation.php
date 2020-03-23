@@ -104,7 +104,7 @@ if (isset($_POST['forminscription'])) {
                         </select>
                         <label for="Ddd">Date de début</label> <input id="Ddd" type="date" name="Ddd"  />
                         <label for="Ddf">Date de fin</label> <input id="Ddf" type="date" name="Ddf"/>
-                        <input class="button" name="forminscription" type="submit" value="Envoyer" />
+                        <input class="button" name="forminscription" type="submit" value="Valider" />
                         <?php
                         if (isset($erreur)) {
                             echo $erreur;
