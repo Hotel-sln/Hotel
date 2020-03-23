@@ -91,8 +91,8 @@ if (isset($_POST['forminscription'])) {
                         <label for="Mail">Mail :</label> <input id="Mail" type="email" name="mail" placeholder="UMPforEver@bettencourt.fr" required />
                         <label for="Tel">Téléphone :</label> <input id="Tel" type="text" name="Phone" placeholder="05 55 ..." maxlength="15" required />
 
-                        <label for="Adresse">Adresse :</label> <input id="Adresse" type="text" name="Adresse" placeholder="Elysée" required />
-                        <label for="Ville">Ville :</label> <input id="Ville" type="text" name="Ville" placeholder="93000" maxlength="10" required />
+                        <label for="Adresse">Adresse :</label> <input id="Adresse" type="text" name="Adresse" placeholder="Palais de l'Élysée" required />
+                        <label for="Ville">Ville :</label> <input id="Ville" type="text" name="Ville" placeholder="Neuilly-sur-Seine" maxlength="10" required />
 
 
 
