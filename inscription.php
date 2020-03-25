@@ -64,7 +64,7 @@ if(isset($_POST['forminscription']))
 <!DOCTYPE html>
 
 <head>
-    <title>Chambres</title>
+    <title>Inscription</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -80,7 +80,7 @@ if(isset($_POST['forminscription']))
     <main class="inscription">
         <div class="center">
             <div>
-                <h3>Incription</h3>
+                <h3>Inscription</h3>
 
                 <form method="post" action="">
                     <div class="form">
