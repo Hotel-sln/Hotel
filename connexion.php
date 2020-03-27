@@ -22,7 +22,7 @@ if(isset($_POST['formconnect']))
             $_SESSION['id']=$userinfo['id'];
             $_SESSION['mail'] = $userinfo['mail'];
             $_SESSION['role'] = $userinfo['role'];
-            header("Location:profile.php?id=".$_SESSION['id']);
+            header("Location:staff.php?id=".$_SESSION['id']);
             
         }
         else
