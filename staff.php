@@ -16,13 +16,11 @@
 
     <main>
         <?php
-        $servername = "localhost";
-        $username = "mina";
-        $password = "password";
-        $dbname = "hotel_menton";
+        
+        // Create connection4
+        require_once('php/config.conf');
 
-        // Create connection
-        $conn = new mysqli($servername, $username, $password, $dbname);
+        $conn = new mysqli($server, $user, $passwd, $name);
         // Check connection
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
