@@ -1,6 +1,6 @@
 <header>
 
-        <a href="index.php"><img class="logo" src="assets/img/lemon.png" alt="logomenton" /></a>
+        <a href="index.html"><img class="logo" src="assets/img/lemon.png" alt="logomenton" /></a>
         <h1 class="tittle">L'hôtel Bogdanoff</h1>
         <nav class="lien"><a class="bouton" href="index.php"> Accueil </a></nav>
         <nav class="lien"><a class="bouton" href="chambre.php">Les chambres </a></nav>
