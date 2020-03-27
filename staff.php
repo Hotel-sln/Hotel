@@ -17,8 +17,8 @@
     <main>
         <?php
         $servername = "localhost";
-        $username = "sam";
-        $password = "root";
+        $username = "mina";
+        $password = "password";
         $dbname = "hotel_menton";
 
         // Create connection
