@@ -32,23 +32,24 @@
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
+            echo " <table>
+            <tr>
+                    <th>id</th>
+                    <th>Email</th>
+                    <th>Date arrivée</th>
+                    <th>Date de sortie</th>
+                    <th>Chambre</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Téléphone</th>
+                    <th>Adresse</th>
+                    <th>Ville</th>
+                    <th>Date de réservation</th>
+                </tr> </table>";
             // output data of each row
             while ($row = $result->fetch_assoc()) {
                 echo " 
-                    <table>
-                        <tr>
-                                <th>id</th>
-                                <th>Email</th>
-                                <th>Date arrivée</th>
-                                <th>Date de sortie</th>
-                                <th>Chambre</th>
-                                <th>Nom</th>
-                                <th>Prénom</th>
-                                <th>Téléphone</th>
-                                <th>Adresse</th>
-                                <th>Ville</th>
-                                <th>Date de réservation</th>
-                            </tr>
+                        <table>
                             <tr>
                                 <td> " . $row["id"] . " </td>
                                 <td> " . $row["email"] . " </td>
