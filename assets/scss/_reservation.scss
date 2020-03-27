@@ -1,0 +1,59 @@
+.reser{
+    
+    background-color: $bgmain;
+    display: flex;
+    justify-content: center;
+    
+
+    .center{
+        margin: 125px 0px 15px 0px;
+        width: 60%;
+        
+        background-color: $bgsection;
+        color: $textcolor;
+        border-radius: 15%;
+        padding: 20px 0px;
+            div{
+                
+                margin-top: 10px;
+                
+                    h3{
+                        font-size: 36px;
+                        display: flex;
+                justify-content: center;
+                    }
+                    .form{
+                        display: grid;
+                        grid-template-columns: auto;
+                        grid-template-rows: auto;
+                        
+                        width: 70%;
+
+                        margin-left: auto;
+                        margin-right: auto;
+                        overflow: hidden;
+                        input{
+                            width: 99%;
+                        }
+                        .button{
+                            margin-top: 10px;
+                            width: 100% !important; 
+                            border-radius: 20% ;
+                            border-color: black;
+                            background-color: $headertext ; 
+                            padding: 12px 0px  ;
+                            margin-top: 18px ;
+                            font-size: 20px;
+                        }
+                        .button:hover{
+                            background-color: #ffd54f;
+                        }
+                        select{
+                            background-color: $bgsection;
+                            height: 25px;
+                        }
+
+                    }
+            }
+    }
+}
