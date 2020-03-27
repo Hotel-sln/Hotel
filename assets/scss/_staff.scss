@@ -1,0 +1,24 @@
+body {
+    main {
+        height: max-content;
+        padding-top: 150px;
+        min-height: 50vh;
+        table {
+            margin-left: 10px;
+            margin-right: 10px;
+            table-layout: fixed;
+            width: 97%;
+            th {
+                text-decoration: solid;
+                border: 1px black solid;
+        }
+                
+            td {
+                text-decoration: solid;
+                border: 1px black solid;
+                width: 9%;
+                overflow-wrap: break-word;
+            }
+        }
+    }
+}
