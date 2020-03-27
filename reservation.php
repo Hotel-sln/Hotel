@@ -45,7 +45,7 @@ if (isset($_POST['forminscription'])) {
                     'ville' => $Ville,
                     'date_reservation' => $Date
                 ));
-                $bravo = 'La reservation a bien été effectuer';
+                $bravo = 'La reservation a bien été effectuée';
             }
             else{
                 $erreur = 'Verifier vos date V2';
@@ -54,7 +54,7 @@ if (isset($_POST['forminscription'])) {
             $erreur = 'Verifier vos date';
         }
     } else {
-        $erreur = 'Des champs sont encore vide';
+        $erreur = 'Des champs sont encore vides';
     }
 }
 
