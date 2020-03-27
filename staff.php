@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 // Create connection4
-require_once('PHP/config.conf');
+require_once('php/config.conf');
 
 $conn = new PDO("mysql:host=" . $server . ";dbname=" . $name, $user, $passwd);
 
