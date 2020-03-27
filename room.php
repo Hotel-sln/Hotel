@@ -19,7 +19,7 @@
         <h1 class="tittle">Bogdanoff Hotel</h1>
         <nav class="lien"><a class="bouton" href="index_en.php"> Home </a></nav>
         <nav class="lien"><a class="bouton" href="room.php">Bedroom</a></nav>
-        <nav class="lien"><a class="bouton" href="">Contacts</a></nav>
+        <nav class="lien"><a class="bouton" href="reservation_en.php">Booking</a></nav>
         <nav class="lien"><a class="bouton" href="">More to come</a></nav>
         <div class="meteolang">
             <button id="myBtn">
