@@ -65,7 +65,7 @@ $result = $conn->query($sql);
                 echo " 
                         <table>
                             <tr>
-                                <td> " . $row["id"] . " </td> " . $ID = $row['id'] ."
+                                <td> " . $row["id"] . " </td> 
                                 <td> " . $row["email"] . " </td>
                                 <td> " . $row["date_entree"] . " </td>
                                 <td> " . $row["date_depart"] . " </td>
@@ -80,6 +80,7 @@ $result = $conn->query($sql);
                             </tr> 
                             <tr>
                             <form method='post' action=''>
+                                <input id='id' type='text' name='id' value='" . $row["id"] . "' required />
                                 <input id='Nom' type='text' name='Nom' value='" . $row["nom"] . "' required />
                                 <input id='Prenom' type='text' name='Prenom' value='" . $row["prenom"] . "' required />
                                 <input id='Mail' type='email' name='mail' value='" . $row["email"] . "' required />
@@ -112,7 +113,7 @@ $result = $conn->query($sql);
 <?php if (isset($_POST['forminscription'])) {
     if (!empty($_POST['Nom']) and !empty($_POST['Prenom']) and !empty($_POST['mail']) and !empty($_POST['Phone']) and !empty($_POST['Adresse']) and !empty($_POST['Ville']) and !empty($_POST['Ddd']) and !empty($_POST['Ddf'])) {
 
-
+        $id = htmlspecialchars($_POST['id']);
         $Prenom = htmlspecialchars($_POST['Prenom']);
         $Nom = htmlspecialchars($_POST['Nom']);
         $mail = htmlspecialchars($_POST['mail']);
@@ -125,8 +126,9 @@ $result = $conn->query($sql);
         $Date = NULL;
 
 
-        $req = $conn->prepare("UPDATE reservations SET email = :email , date_entree = :date_entree , date_depart = :date_depart , chambre = :chambre , nom = :nom , prenom = :prenom , phone = :phone , adresse = :adresse , ville = :ville , date_reservation = :date_reservation  WHERE id = 1 ");
+        $req = $conn->prepare("UPDATE reservations SET  email = :email , date_entree = :date_entree , date_depart = :date_depart , chambre = :chambre , nom = :nom , prenom = :prenom , phone = :phone , adresse = :adresse , ville = :ville , date_reservation = :date_reservation  WHERE id= $id ");
         $req->execute(array(
+            
             'email' => $mail,
             'date_entree' => $Ddd,
             'date_depart' => $Ddf,
