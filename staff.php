@@ -16,21 +16,11 @@
 
     <main>
         <?php
-<<<<<<< HEAD
-        $servername = "localhost";
-        $username = "aboubacar";
-        $password = "123456";
-        $dbname = "hotel_menton";
-
-        // Create connection
-        $conn = new mysqli($servername, $username, $password, $dbname);
-=======
         
         // Create connection4
         require_once('php/config.conf');
 
         $conn = new mysqli($server, $user, $passwd, $name);
->>>>>>> ef622309299a8f46283981d606fd8d7a64daac56
         // Check connection
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
