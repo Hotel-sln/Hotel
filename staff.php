@@ -76,21 +76,25 @@ $result = $conn->query($sql);
                                 <td> " . $row["adresse"] . " </td>
                                 <td> " . $row["ville"] . " </td>
                                 <td> " . $row["date_reservation"] . " </td>
-                                <td> </td>
+                                <td class='center'> <button class='but' onclick='swap2()'> Modifier </button> </td>
                             </tr> 
-                            <tr>
+                            <tr class='none' id='nones'>
                             <form method='post' action=''>
-                                <input id='id' type='text' name='id' value='" . $row["id"] . "' required />
-                                <input id='Nom' type='text' name='Nom' value='" . $row["nom"] . "' required />
-                                <input id='Prenom' type='text' name='Prenom' value='" . $row["prenom"] . "' required />
-                                <input id='Mail' type='email' name='mail' value='" . $row["email"] . "' required />
-                                <input id='Tel' type='text' name='Phone' value='" . $row["phone"] . "' maxlength='15' required />
-                                <input id='Adresse' type='text' name='Adresse' value='" . $row["adresse"] . "' required />
-                                <input id='Ville' type='text' name='Ville' value='" . $row["ville"] . "' maxlength='10' required />
-                                <input id='Chambres' type='text' name='Chambres' value='" . $row["chambre"] . "' />
-                                <input id='Ddd' type='text' name='Ddd' value='" . $row["date_entree"] . "' />
-                                <input id='Ddf' type='text' name='Ddf' value='" . $row["date_depart"] . "' />
-                                <input  class='button' name='forminscription' type='submit' value='Valider' />
+                            
+                            <td>    <input id='id' type='text' name='id' value='" . $row["id"] . "' required /> </td>
+                            <td>    <input id='Mail' type='email' name='mail' value='" . $row["email"] . "' required /> </td>
+                            <td>    <input id='Ddd' type='text' name='Ddd' value='" . $row["date_entree"] . "' /> </td>
+                            <td>    <input id='Ddf' type='text' name='Ddf' value='" . $row["date_depart"] . "' /> </td>
+                            <td>    <input id='Chambres' type='text' name='Chambres' value='" . $row["chambre"] . "' /> </td>
+                            <td>    <input id='Nom' type='text' name='Nom' value='" . $row["nom"] . "' required /> </td>
+                            <td>    <input id='Prenom' type='text' name='Prenom' value='" . $row["prenom"] . "' required /> </td>
+                                
+                            <td>    <input id='Tel' type='text' name='Phone' value='" . $row["phone"] . "' maxlength='15' required /> </td>
+                            <td>    <input id='Adresse' type='text' name='Adresse' value='" . $row["adresse"] . "' required /> </td>
+                            <td>    <input id='Ville' type='text' name='Ville' value='" . $row["ville"] . "' maxlength='10' required /> </td>
+                            <td>  </td>
+                                
+                            <td>    <input  class='button' name='forminscription' type='submit' value='Valider' /> </td>
                                 
                             </form>
                             </tr>
@@ -147,5 +151,19 @@ $result = $conn->query($sql);
     }
 }
 ?>
+
+<script>
+  function swap2() {
+
+    if (document.getElementById('nones').style.display == 'contents') {
+      document.getElementById('nones').style.display = 'none';
+
+    } else {
+      document.getElementById('nones').style.display = 'contents';
+
+    };
+
+  }
+</script>
 
 </html>
