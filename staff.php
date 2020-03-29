@@ -76,9 +76,9 @@ $result = $conn->query($sql);
                                 <td> " . $row["adresse"] . " </td>
                                 <td> " . $row["ville"] . " </td>
                                 <td> " . $row["date_reservation"] . " </td>
-                                <td class='center'> <button class='but' onclick='swap2()'> Modifier </button> </td>
+                                <td > </td>
                             </tr> 
-                            <tr class='none' id='nones'>
+                            <tr class='none' >
                             <form method='post' action=''>
                             
                             <td>    <input id='id' type='text' name='id' value='" . $row["id"] . "' required /> </td>
@@ -152,18 +152,6 @@ $result = $conn->query($sql);
 }
 ?>
 
-<script>
-  function swap2() {
 
-    if (document.getElementById('nones').style.display == 'contents') {
-      document.getElementById('nones').style.display = 'none';
-
-    } else {
-      document.getElementById('nones').style.display = 'contents';
-
-    };
-
-  }
-</script>
 
 </html>
