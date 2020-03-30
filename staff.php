@@ -81,7 +81,8 @@ $result = $conn->query($sql);
                             <tr class='none' >
                             <form method='post' action=''>
                             
-                            <td>    <input id='id' type='text' name='id' value='" . $row["id"] . "' required /> </td>
+                            <td>    <input class='id' id='id' type='text' name='id' value='" . $row["id"] . "' required /> </td>
+                            
                             <td>    <input id='Mail' type='email' name='mail' value='" . $row["email"] . "' required /> </td>
                             <td>    <input id='Ddd' type='text' name='Ddd' value='" . $row["date_entree"] . "' /> </td>
                             <td>    <input id='Ddf' type='text' name='Ddf' value='" . $row["date_depart"] . "' /> </td>
