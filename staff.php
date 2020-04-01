@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 // Create connection4
-require_once('PHP/config.conf');
+require_once('php/config.conf');
 
 $conn = new PDO("mysql:host=" . $server . ";dbname=" . $name, $user, $passwd);
 
@@ -76,21 +76,26 @@ $result = $conn->query($sql);
                                 <td> " . $row["adresse"] . " </td>
                                 <td> " . $row["ville"] . " </td>
                                 <td> " . $row["date_reservation"] . " </td>
-                                <td> </td>
+                                <td > </td>
                             </tr> 
-                            <tr>
+                            <tr class='none' >
                             <form method='post' action=''>
-                                <input id='id' type='text' name='id' value='" . $row["id"] . "' required />
-                                <input id='Nom' type='text' name='Nom' value='" . $row["nom"] . "' required />
-                                <input id='Prenom' type='text' name='Prenom' value='" . $row["prenom"] . "' required />
-                                <input id='Mail' type='email' name='mail' value='" . $row["email"] . "' required />
-                                <input id='Tel' type='text' name='Phone' value='" . $row["phone"] . "' maxlength='15' required />
-                                <input id='Adresse' type='text' name='Adresse' value='" . $row["adresse"] . "' required />
-                                <input id='Ville' type='text' name='Ville' value='" . $row["ville"] . "' maxlength='10' required />
-                                <input id='Chambres' type='text' name='Chambres' value='" . $row["chambre"] . "' />
-                                <input id='Ddd' type='text' name='Ddd' value='" . $row["date_entree"] . "' />
-                                <input id='Ddf' type='text' name='Ddf' value='" . $row["date_depart"] . "' />
-                                <input  class='button' name='forminscription' type='submit' value='Valider' />
+                            
+                            <td>    <input class='id' id='id' type='text' name='id' value='" . $row["id"] . "' required /> </td>
+                            
+                            <td>    <input id='Mail' type='email' name='mail' value='" . $row["email"] . "' required /> </td>
+                            <td>    <input id='Ddd' type='text' name='Ddd' value='" . $row["date_entree"] . "' /> </td>
+                            <td>    <input id='Ddf' type='text' name='Ddf' value='" . $row["date_depart"] . "' /> </td>
+                            <td>    <input id='Chambres' type='text' name='Chambres' value='" . $row["chambre"] . "' /> </td>
+                            <td>    <input id='Nom' type='text' name='Nom' value='" . $row["nom"] . "' required /> </td>
+                            <td>    <input id='Prenom' type='text' name='Prenom' value='" . $row["prenom"] . "' required /> </td>
+                                
+                            <td>    <input id='Tel' type='text' name='Phone' value='" . $row["phone"] . "' maxlength='15' required /> </td>
+                            <td>    <input id='Adresse' type='text' name='Adresse' value='" . $row["adresse"] . "' required /> </td>
+                            <td>    <input id='Ville' type='text' name='Ville' value='" . $row["ville"] . "' maxlength='10' required /> </td>
+                            <td>  </td>
+                                
+                            <td>    <input  class='button' name='forminscription' type='submit' value='Valider' /> </td>
                                 
                             </form>
                             </tr>
@@ -147,5 +152,7 @@ $result = $conn->query($sql);
     }
 }
 ?>
+
+
 
 </html>

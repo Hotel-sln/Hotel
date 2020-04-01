@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 
-require_once('PHP/config.conf');
+require_once('php/config.conf');
 $bdd = new PDO("mysql:host=" . $server . ";dbname=" . $name, $user, $passwd);
 
 
