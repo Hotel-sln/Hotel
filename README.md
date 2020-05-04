@@ -31,7 +31,7 @@ define('PASSWD', '[mot de passe]');
     
 ○ Dans PHPMyAdmin, importer :
 ```
-createbdd.sql
+create_bdd.sql
 create_reservations.sql
 create_users.sql
 ```
