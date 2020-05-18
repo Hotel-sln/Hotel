@@ -5,37 +5,27 @@ error_reporting(E_ALL);
 
 require_once('php/bdd.php');
 
-$pdo= DBConnect();
-if(isset($_POST['formconnect']))
-{
+$pdo = DBConnect();
+if (isset($_POST['formconnect'])) {
     $mailconnect = htmlspecialchars($_POST['mailconnect']);
     $mdpconnect = ($_POST['mdpconnect']);
 
-    if(!empty($mailconnect) AND !empty($mdpconnect))
-    {
+    if (!empty($mailconnect) and !empty($mdpconnect)) {
         $requser = $pdo->prepare("SELECT * FROM users WHERE email = ?");
         $requser->execute(array($mailconnect));
         $userexist = $requser->fetch();
-        if($userexist && password_verify($_POST['mdpconnect'], $userexist['hash_pass']))
-        {
+        if ($userexist && password_verify($_POST['mdpconnect'], $userexist['hash_pass'])) {
             $userinfo = $requser->fetch();
-            $_SESSION['id']=$userinfo['id'];
+            $_SESSION['id'] = $userinfo['id'];
             $_SESSION['mail'] = $userinfo['mail'];
             $_SESSION['role'] = $userinfo['role'];
-            header("Location:staff.php?id=".$_SESSION['id']);
-            
-        }
-        else
-        {
+            header("Location:staff.php?id=" . $_SESSION['id']);
+        } else {
             $erreur = "Mauvais mail ou mot de passe";
         }
-
+    } else {
+        $erreur = "tous les champs doivent etre complétés";
     }
-    else
-    {
-     $erreur="tous les champs doivent etre complétés" ;  
-    }
-
 }
 ?>
 
@@ -53,37 +43,26 @@ if(isset($_POST['formconnect']))
 <body>
     <?php require_once('header.php'); ?>
 
-    
-
     <main class="connexion">
         <div class="center">
             <div>
                 <h3>Connexion</h3>
-
                 <form method="post" action="">
                     <div class="form">
-                        <label for="mailconnect">Mail :</label> 
+                        <label for="mailconnect">Mail :</label>
                         <input id="mailconnect" type="email" name="mailconnect" placeholder="votre@mail.fr" required />
                         <label for="mdpconnect"> Votre mot de passe:</label>
                         <input id="mdpconnect" type="password" name="mdpconnect" placeholder="Mot de passe" require />
-                        
+
                         <input class="button" name="formconnect" type="submit" value="Connexion" />
                         <?php
                         if (isset($erreur)) {
                             echo $erreur;
                         }
-                        
-                       
-       
-                        
                         ?>
                     </div>
-
-
-
                 </form>
             </div>
-
         </div>
     </main>
 

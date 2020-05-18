@@ -9,9 +9,4 @@ echo $_POST['Chambres'];
 echo $_POST['Ddd'];
 echo $_POST['Ddf'];
 
-
-
-
-
-
 ?>

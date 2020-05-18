@@ -7,8 +7,6 @@ require_once('php/config.conf');
 $bdd = new PDO("mysql:host=" . $server . ";dbname=" . $name, $user, $passwd);
 
 
-
-
 if (isset($_POST['forminscription'])) {
     if (!empty($_POST['Nom']) and !empty($_POST['Prenom']) and !empty($_POST['mail']) and !empty($_POST['Phone']) and !empty($_POST['Adresse']) and !empty($_POST['Ville']) and !empty($_POST['Ddd']) and !empty($_POST['Ddf'])) {
 
@@ -23,10 +21,6 @@ if (isset($_POST['forminscription'])) {
         $Ddd = htmlspecialchars($_POST['Ddd']);
         $Ddf = htmlspecialchars($_POST['Ddf']);
         $Date = date('Y/m/d h:i:s ');
-
-
-
-
 
 
 
@@ -56,9 +50,6 @@ if (isset($_POST['forminscription'])) {
         $erreur = 'Des champs sont encore vide';
     }
 }
-
-
-
 
 ?>
 
@@ -126,13 +117,10 @@ if (isset($_POST['forminscription'])) {
                         <label for="Adresse">Adress :</label> <input id="Adresse" type="text" name="Adresse" placeholder="Palais de l'Élysée" required />
                         <label for="Ville">City :</label> <input id="Ville" type="text" name="Ville" placeholder="Neuilly-sur-Seine" maxlength="10" required />
 
-
-
                         <label for="Types">Room type :</label> <select id="Types" name="Chambres">
                             <option value="Chambre1">Room 1</option>
                             <option value="Chambre2">Room 2</option>
                             <option value="Chambre3">Room 3</option>
-
                         </select>
                         <label for="Ddd">Start date</label> <input id="Ddd" type="date" name="Ddd" />
                         <label for="Ddf">End date</label> <input id="Ddf" type="date" name="Ddf" />
@@ -144,17 +132,10 @@ if (isset($_POST['forminscription'])) {
                             echo $bravo;
                         }
 
-
-
-
                         ?>
                     </div>
-
-
-
                 </form>
             </div>
-
         </div>
     </main>
     <footer class="footermain">

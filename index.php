@@ -83,42 +83,54 @@
                 <p>
                     <img src="assets/img/handicape.png" alt="accessibilité" title="Accessibilité aux personnes handicapées" class="logo" />
                 </p>
-                <p>Accessibilité</p>
+                <p>
+                    Accessibilité
+                </p>
             </div>
 
             <div>
                 <p>
                     <img src="assets/img/lit.png" alt="chambre" title="Chambre" class="logo" />
                 </p>
-                <p>Chambre</p>
+                <p>
+                    Chambre
+                </p>
             </div>
 
             <div>
                 <p>
                     <img src="assets/img/restauration.png" alt="restauration" title="Restauration" class="logo" />
                 </p>
-                <p>Restauration</p>
+                <p>
+                    Restauration
+                </p>
             </div>
 
             <div>
                 <p>
                     <img src="assets/img/wifi.png" alt="wifi" title="Wifi gratuit" class="logo" />
                 </p>
-                <p>Wifi gratuit</p>
+                <p>
+                    Wifi gratuit
+                </p>
             </div>
 
             <div>
                 <p>
                     <img src="assets/img/animaux.png" alt="animaux" title="Animaux acceptés" class="logo" />
                 </p>
-                <p>Animaux acceptés</p>
+                <p>
+                    Animaux acceptés
+                </p>
             </div>
 
             <div>
                 <p>
                     <img src="assets/img/piscine.png" alt="piscine" title="Piscine chauffée" class="logo" />
                 </p>
-                <p>Piscine chauffée</p>
+                <p>
+                    Piscine chauffée
+                </p>
             </div>
         </section>
     </main>

@@ -7,8 +7,6 @@ require_once('php/config.conf');
 $bdd = new PDO("mysql:host=" . $server . ";dbname=" . $name, $user, $passwd);
 
 
-
-
 if (isset($_POST['forminscription'])) {
     if (!empty($_POST['Nom']) and !empty($_POST['Prenom']) and !empty($_POST['mail']) and !empty($_POST['Phone']) and !empty($_POST['Adresse']) and !empty($_POST['Ville']) and !empty($_POST['Ddd']) and !empty($_POST['Ddf'])) {
 
@@ -23,10 +21,7 @@ if (isset($_POST['forminscription'])) {
         $Ddd = htmlspecialchars($_POST['Ddd']);
         $Ddf = htmlspecialchars($_POST['Ddf']);
         $Date = date('Y/m/d h:i:s ');
-        
-       
-        
-       
+
 
 
 
@@ -46,8 +41,7 @@ if (isset($_POST['forminscription'])) {
                     'date_reservation' => $Date
                 ));
                 $bravo = 'La reservation a bien été effectuée';
-            }
-            else{
+            } else {
                 $erreur = 'Verifier vos date V2';
             }
         } else {
@@ -57,8 +51,6 @@ if (isset($_POST['forminscription'])) {
         $erreur = 'Des champs sont encore vides';
     }
 }
-
-
 
 
 ?>
@@ -77,8 +69,6 @@ if (isset($_POST['forminscription'])) {
 <body>
     <?php require_once('header.php'); ?>
 
-    
-
     <main class="reser">
         <div class="center">
             <div>
@@ -90,20 +80,16 @@ if (isset($_POST['forminscription'])) {
                         <label for="Prenom">Prénom :</label> <input id="Prenom" type="text" name="Prenom" placeholder="Sarkozy" required />
                         <label for="Mail">Mail :</label> <input id="Mail" type="email" name="mail" placeholder="UMPforEver@bettencourt.fr" required />
                         <label for="Tel">Téléphone :</label> <input id="Tel" type="text" name="Phone" placeholder="05 55 ..." maxlength="15" required />
-
                         <label for="Adresse">Adresse :</label> <input id="Adresse" type="text" name="Adresse" placeholder="Palais de l'Élysée" required />
                         <label for="Ville">Ville :</label> <input id="Ville" type="text" name="Ville" placeholder="Neuilly-sur-Seine" maxlength="10" required />
-
-
-
                         <label for="Types">Types de Chambres :</label> <select id="Types" name="Chambres">
                             <option value="Chambre1">Chambres1</option>
                             <option value="Chambre2">Chambres2</option>
                             <option value="Chambre3">Chambres3</option>
 
                         </select>
-                        <label for="Ddd">Date de début</label> <input id="Ddd" type="date" name="Ddd"  />
-                        <label for="Ddf">Date de fin</label> <input id="Ddf" type="date" name="Ddf"/>
+                        <label for="Ddd">Date de début</label> <input id="Ddd" type="date" name="Ddd" />
+                        <label for="Ddf">Date de fin</label> <input id="Ddf" type="date" name="Ddf" />
                         <input class="button" name="forminscription" type="submit" value="Valider" />
                         <?php
                         if (isset($erreur)) {
@@ -111,22 +97,16 @@ if (isset($_POST['forminscription'])) {
                         } elseif (isset($bravo)) {
                             echo $bravo;
                         }
-                        
-                       
-       
-                        
+
+
+
                         ?>
                     </div>
-
-
-
                 </form>
             </div>
 
         </div>
     </main>
-
-
 
     <?php require_once('footer.php'); ?>
 

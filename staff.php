@@ -7,20 +7,10 @@ require_once('php/config.conf');
 
 $conn = new PDO("mysql:host=" . $server . ";dbname=" . $name, $user, $passwd);
 
-
-
 $sql = "SELECT * FROM reservations";
 $result = $conn->query($sql);
 
-
-
-
-
-
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -100,10 +90,8 @@ $result = $conn->query($sql);
                             </form>
                             </tr>
                             </table>
-
                 
                 ";
-               
             }
         } else {
             echo "0 results";
@@ -130,10 +118,9 @@ $result = $conn->query($sql);
         $Ddf = htmlspecialchars($_POST['Ddf']);
         $Date = NULL;
 
-
         $req = $conn->prepare("UPDATE reservations SET  email = :email , date_entree = :date_entree , date_depart = :date_depart , chambre = :chambre , nom = :nom , prenom = :prenom , phone = :phone , adresse = :adresse , ville = :ville , date_reservation = :date_reservation  WHERE id= $id ");
         $req->execute(array(
-            
+
             'email' => $mail,
             'date_entree' => $Ddd,
             'date_depart' => $Ddf,
@@ -145,14 +132,10 @@ $result = $conn->query($sql);
             'ville' => $Ville,
             'date_reservation' => $Date
         ));
-        
-        
     } else {
         $erreur = 'Des champs sont encore vide';
     }
 }
 ?>
-
-
 
 </html>

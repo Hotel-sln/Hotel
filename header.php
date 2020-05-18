@@ -1,20 +1,15 @@
 <header>
 
-        <a href="index.php"><img class="logo" src="assets/img/lemon.png" alt="logomenton" /></a>
-        <h1 class="tittle">L'hôtel Bogdanoff</h1>
-        <nav class="lien"><a class="bouton" href="index.php"> Accueil </a></nav>
-        <nav class="lien"><a class="bouton" href="chambre.php">Les chambres </a></nav>
-        <nav class="lien"><a class="bouton" href="reservation.php">Réservation</a></nav>
-        <nav class="lien"><a class="bouton" href="">A venir</a></nav>
-        <div class="meteolang">
-            <button id="myBtn">
-        <img
-          src="assets/img/meteo.png"
-          alt="meteo"
-          width="70%"
-          height="90%"
-        />
-      </button>
+    <a href="index.php"><img class="logo" src="assets/img/lemon.png" alt="logomenton" /></a>
+    <h1 class="tittle">L'hôtel Bogdanoff</h1>
+    <nav class="lien"><a class="bouton" href="index.php"> Accueil </a></nav>
+    <nav class="lien"><a class="bouton" href="chambre.php">Les chambres </a></nav>
+    <nav class="lien"><a class="bouton" href="reservation.php">Réservation</a></nav>
+    <nav class="lien"><a class="bouton" href="">A venir</a></nav>
+    <div class="meteolang">
+        <button id="myBtn">
+            <img src="assets/img/meteo.png" alt="meteo" width="70%" height="90%" />
+        </button>
 
 
         <div id="myModal" class="modal">
