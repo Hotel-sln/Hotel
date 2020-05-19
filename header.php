@@ -1,8 +1,8 @@
 <header>
 
-    <a href="index.php"><img class="logo" src="assets/img/lemon.png" alt="logomenton" /></a>
+    <a href="homepage.php"><img class="logo" src="assets/img/lemon.png" alt="logomenton" /></a>
     <h1 class="tittle">L'hôtel Bogdanoff</h1>
-    <nav class="lien"><a class="bouton" href="index.php"> Accueil </a></nav>
+    <nav class="lien"><a class="bouton" href="homepage.php"> Accueil </a></nav>
     <nav class="lien"><a class="bouton" href="chambre.php">Les chambres </a></nav>
     <nav class="lien"><a class="bouton" href="reservation.php">Réservation</a></nav>
     <nav class="lien"><a class="bouton" href="">A venir</a></nav>
@@ -28,9 +28,9 @@
             </button>
 
             <div class="dropdown-content">
-                <a href="index.php"><img src="assets/img/fr.png" alt="lang" width="40px" height="40px" /></a>
+                <a href="homepage.php"><img src="assets/img/fr.png" alt="lang" width="40px" height="40px" /></a>
                 <a href="https://media.ouest-france.fr/v1/pictures/MjAyMDAzZTRiZjFiMDNlOTFlMzFiYmEyOGEwZjFkMTFkZjg1NTA?width=480&height=270&focuspoint=50%2C25&cropresize=1&client_id=bpeditorial&sign=6f670ea58b920917c4a4a26798e950b6e8ca208da7bbb36aae484571e64f4c2b"><img src="assets/img/ita.png" alt="lang" width="40px" height="40px" /></a>
-                <a href="index_en.php"><img src="assets/img/eng.png" alt="lang" width="40px" height="40px" /></a>
+                <a href="homepage_en.php"><img src="assets/img/eng.png" alt="lang" width="40px" height="40px" /></a>
 
 
             </div>
