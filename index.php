@@ -9,7 +9,6 @@ switch ($requestUri) {
     case 'reservation':
         require('reservation.php');
     break;
-
     case 'chambre_en':
         require('chambre_en.php');
     break;
