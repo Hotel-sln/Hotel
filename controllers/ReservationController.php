@@ -1,4 +1,4 @@
 <?php 
 function indexAction () {
-    require ('views\reservation.php');
+    require ('views/reservation.php');
 }
