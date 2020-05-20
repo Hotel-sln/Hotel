@@ -1,10 +1,10 @@
 <header>
-    <a href="homepage.php"><img class="logo" src="assets/img/lemon.png" alt="logomenton" /></a>
-    <h1 class="tittle">L'hôtel Bogdanoff</h1>
-    <nav class="lien"><a class="bouton" href="homepage.php"> Accueil </a></nav>
-    <nav class="lien"><a class="bouton" href="chambre.php">Les chambres </a></nav>
-    <nav class="lien"><a class="bouton" href="reservation.php">Réservation</a></nav>
-    <nav class="lien"><a class="bouton" href="">A venir</a></nav>
+    <a href="homepage_en.php"><img class="logo" src="assets/img/lemon.png" alt="logomenton" /></a>
+    <h1 class="tittle">Bogdanoff Hotel</h1>
+    <nav class="lien"><a class="bouton" href="homepage_en.php"> Home </a></nav>
+    <nav class="lien"><a class="bouton" href="room.php">Bedroom</a></nav>
+    <nav class="lien"><a class="bouton" href="reservation_en.php">Booking</a></nav>
+    <nav class="lien"><a class="bouton" href="">More to come</a></nav>
     <div class="meteolang">
         <button id="myBtn">
             <img src="assets/img/meteo.png" alt="meteo" width="70%" height="90%" />
