@@ -14,7 +14,7 @@
 <body>
     <!-- ici commence le contenu pour l'utilisateur-->
 
-    <?php require_once('header_en.php'); ?>
+    <?php require_once('includes/header_en.php'); ?>
 
     <main class="chambre">
         <section class="section1">
@@ -143,7 +143,7 @@
         </section>
     </main>
 
-    <?php require_once('footer_en.php') ?>
+    <?php require_once('includes/footer_en.php') ?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
