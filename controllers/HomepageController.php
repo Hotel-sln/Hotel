@@ -1,4 +1,4 @@
 <?php 
-function homeAction () {
+function indexAction () {
     require ('views\homepage.php');
 }
