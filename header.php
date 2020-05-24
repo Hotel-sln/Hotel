@@ -2,7 +2,7 @@
 
     <a href="homepage.php"><img class="logo" src="assets/img/lemon.png" alt="logomenton" /></a>
     <h1 class="tittle">L'hôtel Bogdanoff</h1>
-    <nav class="lien"><a class="bouton" href="homepage.php"> Accueil </a></nav>
+    <nav class="lien"><a class="bouton" href="/<?php echo ADRESSE ?>"> Accueil </a></nav>
     <nav class="lien"><a class="bouton" href="chambre.php">Les chambres </a></nav>
     <nav class="lien"><a class="bouton" href="reservation.php">Réservation</a></nav>
     <nav class="lien"><a class="bouton" href="">A venir</a></nav>
