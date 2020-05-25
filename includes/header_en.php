@@ -1,9 +1,9 @@
 <header>
-    <a href="<?php echo BASE_URL; ?>homepage_en.php"><img class="logo" src="<?php echo BASE_URL; ?>assets/img/lemon.png" alt="logomenton" /></a>
+    <a href="<?php echo BASE_URL; ?>homepage_en/"><img class="logo" src="<?php echo BASE_URL; ?>assets/img/lemon.png" alt="logomenton" /></a>
     <h1 class="tittle">Bogdanoff Hotel</h1>
-    <nav class="lien"><a class="bouton" href="homepage_en.php"> Home </a></nav>
+    <nav class="lien"><a class="bouton" href="<?php echo BASE_URL; ?>homepage_en/"> Home </a></nav>
     <nav class="lien"><a class="bouton" href="<?php echo BASE_URL; ?>room/liste">Bedroom</a></nav>
-    <nav class="lien"><a class="bouton" href="reservation_en.php">Booking</a></nav>
+    <nav class="lien"><a class="bouton" href="<?php echo BASE_URL; ?>reservation_en/index">Booking</a></nav>
     <nav class="lien"><a class="bouton" href="">More to come</a></nav>
     <div class="meteolang">
         <button id="myBtn">
