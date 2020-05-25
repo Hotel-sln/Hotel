@@ -61,7 +61,7 @@ if (isset($_POST['forminscription'])) {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style.min.css" />
 </head>
 
 <body>
