@@ -1,7 +1,7 @@
 <?php
 // Récupération de la requête
 $siteDirectory = '/Hotel/';
-define('ADRESSE', $_SERVER['SERVER_NAME'].$siteDirectory);
+define('ADRESSE', '//'.$_SERVER['SERVER_NAME'].$siteDirectory);
 $requestUri = str_replace('/Hotel/', '', $_SERVER['REQUEST_URI']);
 
 // On sépare les paramètres de la requête
