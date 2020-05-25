@@ -18,10 +18,8 @@
                 </span>
             </li>
         </ul>
-        <img class="feetpic" src="assets/img/Blason_ville_fr_Menton.svg.png" alt="logo" />
 
         <aside class="legal">
-            <img class="icon_royal" src="assets/img/citron.png" alt="logo_citron" />
             Terms - Site map - © L'escadev
         </aside>
     </footer>
