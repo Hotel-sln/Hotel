@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style.min.css"  />
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 
     <main>
         <section id="banniere">
-            <img src="assets/img/menton-colorer1.jpg" alt="image bannière" class="bannier" />
+            <img src="<?php echo BASE_URL; ?>assets/img/menton-colorer1.jpg" alt="image bannière" class="bannier" />
         </section>
 
         <section class="descriptionville">
@@ -47,7 +47,7 @@
             </article>
 
             <aside>
-                <img src="assets/img/baie-de-menton.jpg" alt="photo menton" class="menton" />
+                <img src="<?php echo BASE_URL; ?>assets/img/baie-de-menton.jpg" alt="photo menton" class="menton" />
             </aside>
         </section>
 
@@ -55,23 +55,23 @@
             <button class="prev sliderbutton">&lt;</button>
             <button class="next sliderbutton">&gt;</button>
             <div class="slide">
-                <img src="assets/img/chambre.jpg" alt="chambre" />
+                <img src="<?php echo BASE_URL; ?>assets/img/chambre.jpg" alt="chambre" />
             </div>
             <div class="slide">
-                <img src="assets/img/resto1.png" alt="resto" />
+                <img src="<?php echo BASE_URL; ?>assets/img/resto1.png" alt="resto" />
             </div>
             <div class="slide">
-                <img src="assets/img/piscine.jpg" alt="piscine" />
+                <img src="<?php echo BASE_URL; ?>assets/img/piscine.jpg" alt="piscine" />
             </div>
             <div class="slide">
-                <img src="assets/img/hall1.jpg" alt="hall" />
+                <img src="<?php echo BASE_URL; ?>assets/img/hall1.jpg" alt="hall" />
             </div>
         </div>
 
         <section class="services">
             <div>
                 <p>
-                    <img src="assets/img/parking.png" alt="parking" title="Parking gratuit et sécurisé" class="logo" />
+                    <img src="<?php echo BASE_URL; ?>assets/img/parking.png" alt="parking" title="Parking gratuit et sécurisé" class="logo" />
                 </p>
                 <p>
                     Parking gratuit<br />
@@ -81,7 +81,7 @@
 
             <div>
                 <p>
-                    <img src="assets/img/handicape.png" alt="accessibilité" title="Accessibilité aux personnes handicapées" class="logo" />
+                    <img src="<?php echo BASE_URL; ?>assets/img/handicape.png" alt="accessibilité" title="Accessibilité aux personnes handicapées" class="logo" />
                 </p>
                 <p>
                     Accessibilité
@@ -90,7 +90,7 @@
 
             <div>
                 <p>
-                    <img src="assets/img/lit.png" alt="chambre" title="Chambre" class="logo" />
+                    <img src="<?php echo BASE_URL; ?>assets/img/lit.png" alt="chambre" title="Chambre" class="logo" />
                 </p>
                 <p>
                     Chambre
@@ -99,7 +99,7 @@
 
             <div>
                 <p>
-                    <img src="assets/img/restauration.png" alt="restauration" title="Restauration" class="logo" />
+                    <img src="<?php echo BASE_URL; ?>assets/img/restauration.png" alt="restauration" title="Restauration" class="logo" />
                 </p>
                 <p>
                     Restauration
@@ -108,7 +108,7 @@
 
             <div>
                 <p>
-                    <img src="assets/img/wifi.png" alt="wifi" title="Wifi gratuit" class="logo" />
+                    <img src="<?php echo BASE_URL; ?>assets/img/wifi.png" alt="wifi" title="Wifi gratuit" class="logo" />
                 </p>
                 <p>
                     Wifi gratuit
@@ -117,7 +117,7 @@
 
             <div>
                 <p>
-                    <img src="assets/img/animaux.png" alt="animaux" title="Animaux acceptés" class="logo" />
+                    <img src="<?php echo BASE_URL; ?>assets/img/animaux.png" alt="animaux" title="Animaux acceptés" class="logo" />
                 </p>
                 <p>
                     Animaux acceptés
@@ -126,7 +126,7 @@
 
             <div>
                 <p>
-                    <img src="assets/img/piscine.png" alt="piscine" title="Piscine chauffée" class="logo" />
+                    <img src="<?php echo BASE_URL; ?>assets/img/piscine.png" alt="piscine" title="Piscine chauffée" class="logo" />
                 </p>
                 <p>
                     Piscine chauffée

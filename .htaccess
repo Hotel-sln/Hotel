@@ -2,7 +2,8 @@
 RewriteEngine On
 RewriteBase /Hotel
 RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !-f
+RewriteCond %{REQUEST_URI} !-d
+RewriteCond %{REQUEST_URI} !(\.png|\.jpg|\.gif|\.jpeg|\.css|\.js|\.ttf|\.webmanifest)$
 RewriteRule . index.php [L]
 </IfModule>
