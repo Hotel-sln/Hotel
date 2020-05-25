@@ -26,7 +26,7 @@ $result = $conn->query($sql);
 
 <body>
 
-    <?php require_once('header.php'); ?>
+    <?php require_once('includes/header.php'); ?>
 
     <main>
         <table>
@@ -99,7 +99,7 @@ $result = $conn->query($sql);
 
     </main>
 
-    <?php require_once('footer.php'); ?>
+    <?php require_once('includes/footer.php'); ?>
 
 </body>
 

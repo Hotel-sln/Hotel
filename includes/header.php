@@ -10,8 +10,6 @@
         <button id="myBtn">
             <img src="<?php echo BASE_URL; ?>assets/img/meteo.png" alt="meteo" width="70%" height="90%" />
         </button>
-
-
         <div id="myModal" class="modal">
             <div class="modal-content">
                 <div class="closex"><span class="close">&times;</span></div>
@@ -26,7 +24,6 @@
             <button>
                 <img src="<?php echo BASE_URL; ?>assets/img/fr.png" alt="lang" width="40px" height="40px" />
             </button>
-
             <div class="dropdown-content">
                 <a href="homepage.php"><img src="<?php echo BASE_URL; ?>assets/img/fr.png" alt="lang" width="40px" height="40px" /></a>
                 <a href="https://media.ouest-france.fr/v1/pictures/MjAyMDAzZTRiZjFiMDNlOTFlMzFiYmEyOGEwZjFkMTFkZjg1NTA?width=480&height=270&focuspoint=50%2C25&cropresize=1&client_id=bpeditorial&sign=6f670ea58b920917c4a4a26798e950b6e8ca208da7bbb36aae484571e64f4c2b"><img src="<?php echo BASE_URL; ?>assets/img/ita.png" alt="lang" width="40px" height="40px" /></a>
@@ -35,4 +32,5 @@
 
             </div>
         </div>
+    </div>
 </header>
