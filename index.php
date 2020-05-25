@@ -1,5 +1,6 @@
 <?php
 // Récupération de la requête
+define('BASE_URL', 'http://localhost/Hotel/');
 $siteDirectory = '/Hotel/';
 define('ADRESSE', '//'.$_SERVER['SERVER_NAME'].$siteDirectory);
 $requestUri = str_replace('/Hotel/', '', $_SERVER['REQUEST_URI']);
