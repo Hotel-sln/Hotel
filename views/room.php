@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>assets/css/style.min.css" />
 </head>
 
 <body>
@@ -28,7 +28,7 @@
                 <p class="prix">
                     Starting at 1855 €
                 </p>
-                <img class="star" src="assets/img/fullstar.png" />
+                <img class="star" src="<?php echo BASE_URL; ?>assets/img/fullstar.png" />
             </div>
             <figure>
                 <a href="https://www.megasb.fr/image/produkte/zoom/44178_bild_hauptbild/schlafzimmer+set-4+teilig-mit-140+er-bett.jpg" height="400px" width="400px">
@@ -48,7 +48,7 @@
                 <p class="prix">
                     Starting at 65 €
                 </p>
-                <img class="star" src="assets/img/fullstar.png" />
+                <img class="star" src="<?php echo BASE_URL; ?>assets/img/fullstar.png" />
             </div>
         </section>
 
@@ -60,7 +60,7 @@
                 <p class="prix">
                     Starting at 255 €
                 </p>
-                <img class="star" src="assets/img/fullstar.png" />
+                <img class="star" src="<?php echo BASE_URL; ?>assets/img/fullstar.png" />
             </div>
             <figure>
                 <a href="https://www.megasb.fr/image/produkte/zoom/44178_bild_hauptbild/schlafzimmer+set-4+teilig-mit-140+er-bett.jpg" height="400px" width="400px">
@@ -79,7 +79,7 @@
         <section class="services">
             <div>
                 <p>
-                    <img src="assets/img/parking.png" alt="parking" title="Parking gratuit et sécurisé" class="logo" />
+                    <img src="<?php echo BASE_URL; ?>assets/img/parking.png" alt="parking" title="Parking gratuit et sécurisé" class="logo" />
                 </p>
                 <p>
                     Free parking<br />
@@ -89,7 +89,7 @@
 
             <div>
                 <p>
-                    <img src="assets/img/handicape.png" alt="accessibilité" title="Accessibilité aux personnes handicapées" class="logo" />
+                    <img src="<?php echo BASE_URL; ?>assets/img/handicape.png" alt="accessibilité" title="Accessibilité aux personnes handicapées" class="logo" />
                 </p>
                 <p>
                     Accessibility
@@ -98,7 +98,7 @@
 
             <div>
                 <p>
-                    <img src="assets/img/lit.png" alt="chambre" title="Chambre" class="logo" />
+                    <img src="<?php echo BASE_URL; ?>assets/img/lit.png" alt="chambre" title="Chambre" class="logo" />
                 </p>
                 <p>
                     Room
@@ -107,7 +107,7 @@
 
             <div>
                 <p>
-                    <img src="assets/img/restauration.png" alt="restauration" title="Restauration" class="logo" />
+                    <img src="<?php echo BASE_URL; ?>assets/img/restauration.png" alt="restauration" title="Restauration" class="logo" />
                 </p>
                 <p>
                     Restauration
@@ -116,7 +116,7 @@
 
             <div>
                 <p>
-                    <img src="assets/img/wifi.png" alt="wifi" title="Wifi gratuit" class="logo" />
+                    <img src="<?php echo BASE_URL; ?>assets/img/wifi.png" alt="wifi" title="Wifi gratuit" class="logo" />
                 </p>
                 <p>
                     Free WiFi
@@ -125,7 +125,7 @@
 
             <div>
                 <p>
-                    <img src="assets/img/animaux.png" alt="animaux" title="Animaux acceptés" class="logo" />
+                    <img src="<?php echo BASE_URL; ?>assets/img/animaux.png" alt="animaux" title="Animaux acceptés" class="logo" />
                 </p>
                 <p>
                     Animals allowed
@@ -134,7 +134,7 @@
 
             <div>
                 <p>
-                    <img src="assets/img/piscine.png" alt="piscine" title="Piscine chauffée" class="logo" />
+                    <img src="<?php echo BASE_URL; ?>assets/img/piscine.png" alt="piscine" title="Piscine chauffée" class="logo" />
                 </p>
                 <p>
                     Pool with heating
