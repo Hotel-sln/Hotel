@@ -1,7 +1,5 @@
 <?php require_once('views/header.php'); ?>
 <main>
-    <section>
-        <h1>404 Page non trouvée</h1>
-    </section>
+    <h1>Plan d'accès</h1>
 </main>
 <?php require_once('views/footer.php'); ?>

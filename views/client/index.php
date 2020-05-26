@@ -1,7 +1,3 @@
 <?php require_once('views/header.php'); ?>
-<main>
-    <section>
-        <h1>404 Page non trouvée</h1>
-    </section>
-</main>
+<h1>Espace Client</h1>
 <?php require_once('views/footer.php'); ?>
