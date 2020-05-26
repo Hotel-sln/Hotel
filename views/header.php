@@ -16,8 +16,11 @@
         <a href="<?php echo BASE_URL; ?>"><img class="logo" src="<?php echo BASE_URL; ?>assets/img/lemon.png" alt="logomenton" /></a>
         <h1 class="tittle">L'hôtel Bogdanoff</h1>
         <nav class="lien"><a class="bouton" href="<?php echo BASE_URL; ?>"> Accueil </a></nav>
-        <nav class="lien"><a class="bouton" href="<?php echo BASE_URL; ?>chambre/">Les chambres </a></nav>
+        <nav class="lien"><a class="bouton" href="<?php echo BASE_URL; ?>chambre">Les chambres </a></nav>
         <nav class="lien"><a class="bouton" href="<?php echo BASE_URL; ?>reservation">Réservation</a></nav>
+        <nav class="lien"><a class="bouton" href="<?php echo BASE_URL; ?>contact">Contact</a></nav>
+        <nav class="lien"><a class="bouton" href="<?php echo BASE_URL; ?>contact/acces">Acces</a></nav>
+        <nav class="lien"><a class="bouton" href="<?php echo BASE_URL; ?>services">Services</a></nav>
         <nav class="lien"><a class="bouton" href="">A venir</a></nav>
         <div class="meteolang">
             <button id="myBtn">
