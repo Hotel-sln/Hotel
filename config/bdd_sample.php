@@ -1,4 +1,3 @@
-///file: /config/bdd-sample.php
 <?php
     define('DB_HOST', 'localhost');
     define('DB_NAME', 'hotel_menton');
