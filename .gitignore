@@ -1,1 +1,7 @@
-php/config.conf
+.vscode
+.idea
+.workspace
+.codelite
+.DS_Store
+*.code-workspace
+config/bdd.php
