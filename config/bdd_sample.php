@@ -1,9 +1,6 @@
+///file: /config/bdd-sample.php
 <?php
-    define('SERVER', 'localhost');
-    define('NAME', 'hotel_menton');
-    define('USER', 'root');
-    define('PASSWD', '');
-    $server = 'localhost';
-    $name ='hotel_menton'; 
-    $user='root';
-    $passwd='';
+    define('DB_HOST', 'localhost');
+    define('DB_NAME', 'hotel_menton');
+    define('DB_USER', 'root');
+    define('DB_PASSWORD', '');
