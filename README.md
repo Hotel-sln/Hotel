@@ -14,24 +14,19 @@ git clone https://github.com/Hotel-sln/Hotel.git
 
 ○ Créer un config.conf
 - Copier 
-``` config_sample.conf``` dans le dossier hotel/php
-- Renommer ``` config_sample.conf``` en ``` config.conf```
+``` bdd_sample.conf``` dans le dossier Hotel/config
+- Renommer ``` bdd_sample.php``` en ```bdd.php```
 - Remplacer les identifiants de connexion par :
 
 ``` 
-define('SERVER', 'localhost');
-define('NAME', 'hotel_menton');
-define('USER', '[user]');
-define('PASSWD', '[mot de passe]');
-  $server = 'localhost';
-  $name ='hotel_menton'; 
-  $user='[user]';
-  $passwd='[mot de passe]';
+define('DB_HOST', 'localhost');
+define('DB_NAME', 'hotel_menton');
+define('DB_USER', '[user]');
+define('DB_PASSWORD', '[mot de passe]');
+
 ```
     
 ○ Dans PHPMyAdmin, importer :
 ```
-create_bdd.sql
-create_reservations.sql
-create_users.sql
+script_BDD/hotel_mentonV2.sql
 ```
