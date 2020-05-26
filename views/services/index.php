@@ -1,3 +1,5 @@
 <?php require_once('views/header.php'); ?>
-<h1>Services</h1>
+<main>
+    <h1>Services</h1>
+</main>
 <?php require_once('views/footer.php'); ?>
