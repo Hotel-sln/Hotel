@@ -55,7 +55,7 @@ if (isset($_POST['forminscription'])) {
 
 ?>
 
-    <?php require_once('views/header.php'); ?>
+    <?php require_once('views/templates/header.php'); ?>
 
     <main class="reser">
         <div class="center">
@@ -96,4 +96,4 @@ if (isset($_POST['forminscription'])) {
         </div>
     </main>
 
-    <?php require_once('views/footer.php'); ?>
+    <?php require_once('views/templates/footer.php'); ?>

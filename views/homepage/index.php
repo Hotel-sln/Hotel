@@ -1,5 +1,5 @@
   <!-- ici commence le contenu pour l'utilisateur-->
-  <?php require_once('views/header.php'); ?>
+  <?php require_once('views/templates/header.php'); ?>
 
 
   <main>
@@ -120,4 +120,4 @@
       </section>
   </main>
 
-  <?php require_once('views/footer.php'); ?>
+  <?php require_once('views/templates/footer.php'); ?>
