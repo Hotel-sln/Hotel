@@ -1,13 +1,10 @@
 <?php
 // Récupération de la requête
-$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http';
-$protocol .=  '://';
-$serverName = $_SERVER['SERVER_NAME'];
-$serverName .= isset($_SERVER['SERVER_PORT']) ? ':' . $_SERVER['SERVER_PORT'] : '';
-$serverName .= '/Hotel/';
-define('BASE_URL', $protocol . $serverName);
-$siteDirectory = '/Hotel/';
-define('ADRESSE', '//'.$_SERVER['SERVER_NAME'].$siteDirectory);
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
+define('BASE_URL', '/Hotel/');
+
 $requestUri = str_replace('/Hotel/', '', $_SERVER['REQUEST_URI']);
 
 // On sépare les paramètres de la requête
