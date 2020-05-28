@@ -2,10 +2,10 @@
 require('views/templates/header.php'); ?>
 <main>
 <h1>Liste des chambres</h1>
-<ul>
+<td>
 <?php foreach ($chambres as $chambre) : ?>
-    <li> <?php echo $chambre['type_chambre']; ?> </li>
+    <tr> <?php echo $chambre['type_chambre']; ?> </tr>
 <?php endforeach; ?> 
-</ul>
+</td>
 <?php require('views/template/footer.php'); ?>
 </main>

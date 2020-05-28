@@ -4,7 +4,8 @@ require('models/Chambre.php');
 function listechambresAction(){
 $chambreObject = new Chambre();
 $chambres = $chambreObject->getChambres();
-
+$pageTitle = 'Liste des chambres';
+    require('views/admin/listechambres.php');
 }
 
 function editchambreAction(){
