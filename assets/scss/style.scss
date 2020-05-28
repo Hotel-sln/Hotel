@@ -1,13 +1,19 @@
+/* Base imports */
 @import "variables/reset";
 @import "variables/fonts";
 @import "variables/colors";
+
+/* Layout imports */
 @import "layout";
 @import "header";
 @import "footer";
-@import "layout";
-@import "chambre";
-@import "table";
+
+
+/* Page imports */
+/* @import "chambre"; */
+@import "pages/chambre";
 @import "inscription";
 @import "connexion";
 @import "reservation";
 @import "staff";
+@import "table";
