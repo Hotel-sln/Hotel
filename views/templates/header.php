@@ -23,7 +23,6 @@
                 <li><a class="bouton" href="<?php echo BASE_URL; ?>contact">Contact</a></li>
                 <li><a class="bouton" href="<?php echo BASE_URL; ?>contact/acces">Acces</a></li>
                 <li><a class="bouton" href="<?php echo BASE_URL; ?>services">Services</a></li>
-                <li><a class="bouton" href="">A venir</a></li>
             </ul>
         </nav>
         <div class="meteolang">

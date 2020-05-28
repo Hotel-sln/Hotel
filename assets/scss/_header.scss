@@ -7,14 +7,14 @@ header {
   color: $headertext;
   font-size: 20px;
   position: fixed;
-  width: 100%;
   padding-bottom: 3px;
   border-bottom: solid 2px $headertext;
   z-index: 9000;
 
   .logo {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
+    margin-right: 10px;
     &:hover {
       -webkit-animation: jello-horizontal 0.9s both;
       animation: jello-horizontal 0.9s both;
@@ -43,25 +43,16 @@ header {
       border: 1px black none;
       border-radius: 8px;
       color: $backgroundheader;
-      -webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+      -webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+        both;
       animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
     }
   }
 
   .meteolang {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 50% 50%;
-
-    .meteo {
-      display: flex;
-      justify-content: center;
-      padding-bottom: 25px;
-
-      p {
-        width: 89%;
-      }
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     button {
       background: none;
