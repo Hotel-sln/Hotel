@@ -28,7 +28,7 @@
         </nav>
         <div class="meteolang">
             <button id="myBtn">
-                <img src="<?php echo BASE_URL; ?>assets/img/meteo.png" alt="meteo" width="70%" height="90%" />
+                <img src="<?php echo BASE_URL; ?>assets/img/meteo.png" alt="meteo" width="70" />
             </button>
             <div id="myModal" class="modal">
                 <div class="modal-content">

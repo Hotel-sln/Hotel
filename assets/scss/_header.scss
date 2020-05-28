@@ -1,11 +1,13 @@
 header {
   width: 100%;
   background-color: $backgroundheader;
-  display: grid;
-  grid-template-columns: 150px auto 90px 140px 150px 100px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: $headertext;
   font-size: 20px;
   position: fixed;
+  width: 100%;
   padding-bottom: 3px;
   border-bottom: solid 2px $headertext;
   z-index: 9000;
@@ -15,34 +17,34 @@ header {
     width: 100px;
     &:hover {
       -webkit-animation: jello-horizontal 0.9s both;
-	    animation: jello-horizontal 0.9s both;
+      animation: jello-horizontal 0.9s both;
     }
   }
 
   .tittle {
-    font-size: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    font-size: 30px;
   }
+
   .lien {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    ul {
+      li {
+        display: inline-block;
+      }
+    }
   }
+
   .bouton {
     color: $bottomtext;
     text-decoration: none;
     padding: 4px;
-    max-width: fit-content;
-    
-    &:hover{
-     background-color: $headertext;
+
+    &:hover {
+      background-color: $headertext;
       border: 1px black none;
       border-radius: 8px;
-      color: $backgroundheader;     
-      -webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-	    animation: shake-top 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+      color: $backgroundheader;
+      -webkit-animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+      animation: shake-top 0.8s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
     }
   }
 
@@ -146,66 +148,66 @@ header {
   0%,
   100% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
     -webkit-transform-origin: 50% 0;
-            transform-origin: 50% 0;
+    transform-origin: 50% 0;
   }
   10% {
     -webkit-transform: rotate(2deg);
-            transform: rotate(2deg);
+    transform: rotate(2deg);
   }
   20%,
   40%,
   60% {
     -webkit-transform: rotate(-4deg);
-            transform: rotate(-4deg);
+    transform: rotate(-4deg);
   }
   30%,
   50%,
   70% {
     -webkit-transform: rotate(4deg);
-            transform: rotate(4deg);
+    transform: rotate(4deg);
   }
   80% {
     -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
+    transform: rotate(-2deg);
   }
   90% {
     -webkit-transform: rotate(2deg);
-            transform: rotate(2deg);
+    transform: rotate(2deg);
   }
 }
 @keyframes shake-top {
   0%,
   100% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
     -webkit-transform-origin: 50% 0;
-            transform-origin: 50% 0;
+    transform-origin: 50% 0;
   }
   10% {
     -webkit-transform: rotate(2deg);
-            transform: rotate(2deg);
+    transform: rotate(2deg);
   }
   20%,
   40%,
   60% {
     -webkit-transform: rotate(-4deg);
-            transform: rotate(-4deg);
+    transform: rotate(-4deg);
   }
   30%,
   50%,
   70% {
     -webkit-transform: rotate(4deg);
-            transform: rotate(4deg);
+    transform: rotate(4deg);
   }
   80% {
     -webkit-transform: rotate(-2deg);
-            transform: rotate(-2deg);
+    transform: rotate(-2deg);
   }
   90% {
     -webkit-transform: rotate(2deg);
-            transform: rotate(2deg);
+    transform: rotate(2deg);
   }
 }
 
@@ -213,60 +215,60 @@ header {
 @-webkit-keyframes jello-horizontal {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
   30% {
     -webkit-transform: scale3d(1.25, 0.75, 1);
-            transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
   }
   40% {
     -webkit-transform: scale3d(0.75, 1.25, 1);
-            transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
   }
   50% {
     -webkit-transform: scale3d(1.15, 0.85, 1);
-            transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
   }
   65% {
     -webkit-transform: scale3d(0.95, 1.05, 1);
-            transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
   }
   75% {
     -webkit-transform: scale3d(1.05, 0.95, 1);
-            transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
   }
   100% {
     -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
 @keyframes jello-horizontal {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
   30% {
     -webkit-transform: scale3d(1.25, 0.75, 1);
-            transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
   }
   40% {
     -webkit-transform: scale3d(0.75, 1.25, 1);
-            transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
   }
   50% {
     -webkit-transform: scale3d(1.15, 0.85, 1);
-            transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
   }
   65% {
     -webkit-transform: scale3d(0.95, 1.05, 1);
-            transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
   }
   75% {
     -webkit-transform: scale3d(1.05, 0.95, 1);
-            transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
   }
   100% {
     -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
 }
