@@ -10,4 +10,16 @@ class Chambre
         $result = $connection->query('SELECT * FROM chambres ORDER BY id DESC');
         return $result ? $result->fetchAll(PDO::FETCH_ASSOC) : null;
     }
+    public function updateChambres()
+    {
+
+    }
+    public function deleteChambres()
+    {
+
+    }
+    public function createChambres()
+    {
+
+    }
 }
