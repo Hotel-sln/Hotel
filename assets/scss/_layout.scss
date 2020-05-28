@@ -8,16 +8,20 @@ html {
 
 body {
     main {
+        color: #ffffff;
         background-color: $bgmain;
-        
 
-        
+        .container {
+            padding: 0 1.5rem;
+        }
 
         .descriptionville {
             display: flex;
             text-align: justify;
             align-items: center;
-            article{padding: 0px 15px 0px 30px;}
+            article {
+                padding: 0px 15px 0px 30px;
+            }
         }
         .bannier {
             width: 100%;
@@ -44,18 +48,15 @@ body {
             justify-content: space-around;
             padding: 45px;
             color: $colorservice;
-                div{
-                    
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                p {
                     display: flex;
-                    flex-direction: column;
                     justify-content: center;
-                    p{
-                        display: flex;
-                        justify-content: center;
-                    }
-                  
-                    
                 }
+            }
         }
         #slider {
             height: 50vh;
