@@ -17,6 +17,7 @@ function editchambreAction(){
 
     if (isset($_POST['forminscription2'])) {
         $chambreObject->changeChambre($chambreId);
+        header('Location: ' . BASE_URL . 'admin/editchambre/'. $chambre['id'] .'');
     }
 
 
