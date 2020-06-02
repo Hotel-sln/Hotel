@@ -15,6 +15,11 @@ function editchambreAction(){
     $chambreObject = new Chambre();
     $chambre = $chambreObject->getChambre($chambreId);
 
+    if (isset($_POST['forminscription2'])) {
+        $chambreObject->changeChambre($chambreId);
+    }
+
+
     $pageTitle = 'Modifier une chambre';
     require('views/admin/editchambre.php');
   
