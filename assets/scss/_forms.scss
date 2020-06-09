@@ -1,0 +1,37 @@
+form {
+    .form_row {
+        display: flex;
+        margin-bottom: 1rem;
+
+        label {
+            order: 1;
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            width: 200px;
+            text-align: right;
+            vertical-align: top;
+        }
+
+        input[type="text"],
+        textarea {
+            order: 2;
+            padding: 0.5rem 1rem;
+            width: 500px;
+        }
+
+        & *[required] ~ label:after {
+            content: " *";
+            color: red;
+        }
+    }
+}
+
+
+a {
+    color: white;
+
+    &[target="_blank"]:after {
+        content: " +";
+        font-variant-position: super;
+    }
+}
