@@ -20,15 +20,24 @@ function loginAction()
 {
     if( isset( $_POST['formconnect'] ) ) {
         $mailconnect = htmlspecialchars( $_POST['mailconnect'] );
-        $admin       = new Admin();
-        $result      = $admin->connexionAdmin( $mailconnect );
+        $mdpconnect  = htmlspecialchars( $_POST['mdpconnect'] );
 
-        if( $_POST['mdpconnect'] == $result['motdepasse'] ) {
+        $params = [
+            'mail'     => $mailconnect,
+            'password' => $mdpconnect,
+        ];
+
+        $admin  = new Admin();
+        $result = $admin->connexionAdmin( $params );
+
+        if( $result ) {
             $_SESSION['adminid']   = $result['id'];
             $_SESSION['adminmail'] = $result['mail'];
-            header( 'Location: ' . BASE_URL . 'admin/' );
         }
+
+        header( 'Location: ' . BASE_URL . 'admin/' );
     }
+
     require( "views/admin/login.php" );
 }
 
