@@ -1,5 +1,5 @@
 <?php
-require( 'models/Bdd.php' );
+require_once( 'models/Bdd.php' );
 
 class Chambre
 {
@@ -67,5 +67,5 @@ class Chambre
             'id' => $id,
         ) );
     }
-    
+
 }

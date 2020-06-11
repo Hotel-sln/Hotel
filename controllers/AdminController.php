@@ -1,10 +1,11 @@
 <?php
+session_start();
 require( 'models/Chambre.php' );
 require( 'models/Admin.php' );
 
 function isConn()
 {
-    if( ! isset( $_SESSION["adminid"] ) && ( ! isset( $_SESSION["adminmail"] ) ) ) {
+    if( ! isset( $_SESSION["adminid"] ) ) {
         header( 'Location: ' . BASE_URL . 'admin/login' );
     }
 }
@@ -23,13 +24,21 @@ function loginAction()
         $result      = $admin->connexionAdmin( $mailconnect );
 
         if( $_POST['mdpconnect'] == $result['motdepasse'] ) {
-            session_start();
-            $_SESSION['id']   = $result['id'];
-            $_SESSION['mail'] = $result['mail'];
+            $_SESSION['adminid']   = $result['id'];
+            $_SESSION['adminmail'] = $result['mail'];
             header( 'Location: ' . BASE_URL . 'admin/' );
         }
     }
     require( "views/admin/login.php" );
+}
+
+function logoutAction()
+{
+    // 1. Détruire la session
+    session_destroy();
+
+    // 2. Redirection vers la page login
+    Header( 'Location: ' . BASE_URL . 'admin/login' );
 }
 
 function listechambresAction()
