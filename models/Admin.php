@@ -8,7 +8,7 @@ class Admin
         $result = $connection->prepare("SELECT * FROM admin WHERE email = ?");
         $result->execute(array($mailconnect));
         $userexist = $result->fetch();
-        var_dump($userexist);
+       
         return $userexist ;
     }
 }

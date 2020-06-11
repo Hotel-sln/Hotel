@@ -3,6 +3,7 @@ require('models/Chambre.php');
 require('models/Admin.php');
 function listechambresAction()
 {
+    session_start();
     $chambreObject = new Chambre();
     $chambres      = $chambreObject->getChambres();
     $pageTitle     = 'Liste des chambres';
@@ -11,6 +12,7 @@ function listechambresAction()
 
 function editchambreAction()
 {
+    session_start();
     $requestUri    = str_replace(BASE_URL, '', $_SERVER['REQUEST_URI']);
     $requestParams = explode('/', $requestUri);
     $chambreId     = isset($requestParams[2]) ? $requestParams[2] : null;
@@ -28,6 +30,7 @@ function editchambreAction()
 
 function ajoutchambreAction()
 {
+    session_start();
     if (isset($_POST['submit'])) {
         // 1. Récupération des données du formulaire
         $chambreNom         = htmlspecialchars($_POST['txt_chambre']);
@@ -58,6 +61,7 @@ function ajoutchambreAction()
 
 function supprimechambreAction()
 {
+    session_start();
     $requestUri    = str_replace(BASE_URL, '', $_SERVER['REQUEST_URI']);
     $requestParams = explode('/', $requestUri);
     $chambreId     = isset($requestParams[2]) ? $requestParams[2] : null;
@@ -70,13 +74,23 @@ function supprimechambreAction()
 
 function loginAction()
 {
+     if(!isset($_SESSION["adminid"]) && (!isset($_SESSION["adminmail"]))){
+
+        header('Location: ' . BASE_URL . 'admin/listechambres');
+      }
+
+    session_start();
     if (isset($_POST['formconnect'])) {
         $mailconnect =  htmlspecialchars($_POST['mailconnect']);
         $admin = new Admin();
         $result = $admin->connexionAdmin($mailconnect);
-        var_dump($result);
+       
         if ($_POST['mdpconnect'] == $result['motdepasse']) { 
-            echo "oui";
+            $_SESSION['adminid']= $result['id'];
+            $_SESSION['adminmail'] = $result['email'];
+            
+            setcookie("userId",(string)$result->id,time() + 9800,'/');
+            var_dump($_SESSION);
         }
     }
     require("views/admin/login.php");
