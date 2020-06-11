@@ -10,12 +10,28 @@ class Admin
         $connection = $bdd->getConnection();
 
         $result =
-            $connection->prepare( 'SELECT * FROM admin WHERE mail = :mail' );
+            $connection->prepare( 'SELECT * FROM admin WHERE email = :email' );
         $result->execute( [
-            'mail' => $mailconnect,
+            'email' => $mailconnect,
         ] );
 
         return $result ? $result->fetch( PDO::FETCH_ASSOC ) : null;
+    }
+    public function inscriptionAdmin($mailconnect,$mdpconnect) 
+    {
+        $bdd        = new Bdd();
+        $connection = $bdd->getConnection();
+
+
+        $mdpconnect = password_hash($mdpconnect, PASSWORD_DEFAULT);
+
+        $req = $connection-> prepare("INSERT INTO admin (email, motdepasse, nom) VALUES(:email, :motdepasse, :nom)");
+        $req->execute(array(
+            'email' => $mailconnect,
+            'motdepasse' => $mdpconnect,
+            'nom' => 'Bruno'
+
+        ));
     }
 
 }
