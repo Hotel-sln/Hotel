@@ -3,11 +3,8 @@ require('models/Chambre.php');
 require('models/Admin.php');
 function listechambresAction()
 {
-    
-    if(!isset($_COOKIE["adminid"]) && (!isset($_COOKIE["adminmail"]))){
-
-        header('Location: ' . BASE_URL . 'admin/login');
-      }
+    session_start();
+    isConn();
     $chambreObject = new Chambre();
     $chambres      = $chambreObject->getChambres();
     $pageTitle     = 'Liste des chambres';
@@ -16,11 +13,8 @@ function listechambresAction()
 
 function editchambreAction()
 {
-    
-    if(!isset($_COOKIE["adminid"]) && (!isset($_COOKIE["adminmail"]))){
-
-        header('Location: ' . BASE_URL . 'admin/login');
-      }
+    session_start();
+    isConn();
     $requestUri    = str_replace(BASE_URL, '', $_SERVER['REQUEST_URI']);
     $requestParams = explode('/', $requestUri);
     $chambreId     = isset($requestParams[2]) ? $requestParams[2] : null;
@@ -38,11 +32,8 @@ function editchambreAction()
 
 function ajoutchambreAction()
 {
-    
-    if(!isset($_COOKIE["adminid"]) && (!isset($_COOKIE["adminmail"]))){
-
-        header('Location: ' . BASE_URL . 'admin/login');
-      }
+    session_start();
+    isConn();
     if (isset($_POST['submit'])) {
         // 1. Récupération des données du formulaire
         $chambreNom         = htmlspecialchars($_POST['txt_chambre']);
@@ -73,12 +64,9 @@ function ajoutchambreAction()
 
 function supprimechambreAction()
 {
-    
+    session_start();
    
-    if(!isset($_COOKIE["adminid"]) && (!isset($_COOKIE["adminmail"]))){
-
-        header('Location: ' . BASE_URL . 'admin/login');
-      }
+    isConn();
     $requestUri    = str_replace(BASE_URL, '', $_SERVER['REQUEST_URI']);
     $requestParams = explode('/', $requestUri);
     $chambreId     = isset($requestParams[2]) ? $requestParams[2] : null;
@@ -89,31 +77,41 @@ function supprimechambreAction()
     Header('Location: ' . BASE_URL . 'admin/listechambres');
 }
 
+function isConn(){
+    if(!isset($_SESSION["adminid"]) && (!isset($_SESSION["adminmail"]))){
+
+        header('Location: ' . BASE_URL . 'admin/login');
+    }
+}
+
 function loginAction()
 {
+    session_start();
     
-
-    
-    if(isset($_COOKIE["adminid"]) && (isset($_COOKIE["adminmail"]))){
-
-        header('Location: ' . BASE_URL . 'admin/listechambres');
-      }
     if (isset($_POST['formconnect'])) {
         $mailconnect =  htmlspecialchars($_POST['mailconnect']);
-        $admin = new Admin();
+        $admin= new Admin();
         $result = $admin->connexionAdmin($mailconnect);
         
        
         if ($_POST['mdpconnect'] == $result['motdepasse']) { 
+            session_start();
+            $_SESSION['id']= $result['id'];
+            $_SESSION['mail'] = $result['mail'];
            
-            setcookie('adminid', $result['id']);
-            setcookie('adminmail', $result['email']);
            
             
-            header('Location: ' . BASE_URL . 'admin/login');
+            header('Location: ' . BASE_URL . 'admin/');
+           
             
             
         }
     }
     require("views/admin/login.php");
+}
+
+function indexAction(){
+    
+    isConn();
+    require("views/admin/index.php");
 }
