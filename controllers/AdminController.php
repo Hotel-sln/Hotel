@@ -3,7 +3,7 @@ require('models/Chambre.php');
 require('models/Admin.php');
 function listechambresAction()
 {
-    session_start();
+    
     if(!isset($_COOKIE["adminid"]) && (!isset($_COOKIE["adminmail"]))){
 
         header('Location: ' . BASE_URL . 'admin/login');
@@ -16,7 +16,7 @@ function listechambresAction()
 
 function editchambreAction()
 {
-    session_start();
+    
     if(!isset($_COOKIE["adminid"]) && (!isset($_COOKIE["adminmail"]))){
 
         header('Location: ' . BASE_URL . 'admin/login');
@@ -38,7 +38,7 @@ function editchambreAction()
 
 function ajoutchambreAction()
 {
-    session_start();
+    
     if(!isset($_COOKIE["adminid"]) && (!isset($_COOKIE["adminmail"]))){
 
         header('Location: ' . BASE_URL . 'admin/login');
@@ -74,7 +74,7 @@ function ajoutchambreAction()
 function supprimechambreAction()
 {
     
-    session_start();
+   
     if(!isset($_COOKIE["adminid"]) && (!isset($_COOKIE["adminmail"]))){
 
         header('Location: ' . BASE_URL . 'admin/login');
@@ -93,7 +93,7 @@ function loginAction()
 {
     
 
-    session_start();
+    
     if(isset($_COOKIE["adminid"]) && (isset($_COOKIE["adminmail"]))){
 
         header('Location: ' . BASE_URL . 'admin/listechambres');
