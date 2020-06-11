@@ -9,6 +9,6 @@ class Admin
         $result->execute(array($mailconnect));
         $userexist = $result->fetch();
         var_dump($userexist);
-        return $userexist;
+        return $userexist ;
     }
 }

@@ -73,9 +73,10 @@ function loginAction()
     if (isset($_POST['formconnect'])) {
         $mailconnect =  htmlspecialchars($_POST['mailconnect']);
         $admin = new Admin();
-        $admin->connexionAdmin($mailconnect);
-        var_dump($userexist);
-        if ($_POST['mdpconnect'] == $userexist['motdepasse']) {
+        $result = $admin->connexionAdmin($mailconnect);
+        var_dump($result);
+        if ($_POST['mdpconnect'] == $result['motdepasse']) { 
+            echo "oui";
         }
     }
     require("views/admin/login.php");
