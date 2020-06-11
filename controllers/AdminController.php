@@ -4,7 +4,7 @@ require('models/Admin.php');
 function listechambresAction()
 {
     session_start();
-    if(!isset($_SESSION["adminid"]) && (!isset($_SESSION["adminmail"]))){
+    if(!isset($_COOKIE["adminid"]) && (!isset($_COOKIE["adminmail"]))){
 
         header('Location: ' . BASE_URL . 'admin/login');
       }
@@ -17,7 +17,7 @@ function listechambresAction()
 function editchambreAction()
 {
     session_start();
-    if(!isset($_SESSION["adminid"]) && (!isset($_SESSION["adminmail"]))){
+    if(!isset($_COOKIE["adminid"]) && (!isset($_COOKIE["adminmail"]))){
 
         header('Location: ' . BASE_URL . 'admin/login');
       }
@@ -39,7 +39,7 @@ function editchambreAction()
 function ajoutchambreAction()
 {
     session_start();
-    if(!isset($_SESSION["adminid"]) && (!isset($_SESSION["adminmail"]))){
+    if(!isset($_COOKIE["adminid"]) && (!isset($_COOKIE["adminmail"]))){
 
         header('Location: ' . BASE_URL . 'admin/login');
       }
@@ -75,7 +75,7 @@ function supprimechambreAction()
 {
     
     session_start();
-    if(!isset($_SESSION["adminid"]) && (!isset($_SESSION["adminmail"]))){
+    if(!isset($_COOKIE["adminid"]) && (!isset($_COOKIE["adminmail"]))){
 
         header('Location: ' . BASE_URL . 'admin/login');
       }
@@ -94,7 +94,7 @@ function loginAction()
     
 
     session_start();
-    if(isset($_SESSION["adminid"]) && (isset($_SESSION["adminmail"]))){
+    if(isset($_COOKIE["adminid"]) && (isset($_COOKIE["adminmail"]))){
 
         header('Location: ' . BASE_URL . 'admin/listechambres');
       }
@@ -102,13 +102,16 @@ function loginAction()
         $mailconnect =  htmlspecialchars($_POST['mailconnect']);
         $admin = new Admin();
         $result = $admin->connexionAdmin($mailconnect);
+        
        
         if ($_POST['mdpconnect'] == $result['motdepasse']) { 
-            $_SESSION['adminid']= $result['id'];
-            $_SESSION['adminmail'] = $result['email'];
+           
+            setcookie('adminid', $result['id']);
+            setcookie('adminmail', $result['email']);
+           
             
             header('Location: ' . BASE_URL . 'admin/login');
-            setcookie("userId",(string)$result->id,time() + 9800,'/');
+            
             
         }
     }
