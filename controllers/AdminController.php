@@ -78,7 +78,8 @@ function supprimechambreAction()
 }
 
 function isConn(){
-    if(!isset($_SESSION["adminid"]) && (!isset($_SESSION["adminmail"]))){
+    session_start();
+    if(!isset($_SESSION['adminid']) AND (!isset($_SESSION['adminmail']))){
 
         header('Location: ' . BASE_URL . 'admin/login');
     }
@@ -94,15 +95,19 @@ function loginAction()
         
         $admin= new Admin();
         $result = $admin->connexionAdmin($mailconnect);
-        var_dump($result);
+        
+        
         
        
-        if($result && password_verify($_POST['mdpconnect'], $result['motdepasse'])){
-            session_start();
+        if($result && password_verify($mdpconnect, $result['motdepasse'])){
+            
             $_SESSION['adminid']= $result['id'];
             $_SESSION['adminmail'] = $result['email'];
+            
+            
            
            
+            
             
             header('Location: ' . BASE_URL . 'admin/');
            
