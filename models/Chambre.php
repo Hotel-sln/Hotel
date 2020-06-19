@@ -68,4 +68,9 @@ class Chambre
         ) );
     }
 
+    public function reserverChambre()
+    {
+        $bdd        = new Bdd();
+        $connection = $bdd->getConnection();
+    }
 }
