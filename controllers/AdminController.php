@@ -3,7 +3,7 @@ require('models/Chambre.php');
 require('models/Admin.php');
 function listechambresAction()
 {
-    session_start();
+    
     isConn();
     $chambreObject = new Chambre();
     $chambres      = $chambreObject->getChambres();
@@ -13,7 +13,7 @@ function listechambresAction()
 
 function editchambreAction()
 {
-    session_start();
+    
     isConn();
     $requestUri    = str_replace(BASE_URL, '', $_SERVER['REQUEST_URI']);
     $requestParams = explode('/', $requestUri);
@@ -32,7 +32,7 @@ function editchambreAction()
 
 function ajoutchambreAction()
 {
-    session_start();
+    
     isConn();
     if (isset($_POST['submit'])) {
         // 1. Récupération des données du formulaire
@@ -98,11 +98,11 @@ function loginAction()
         $admin= new Admin();
         $result = $admin->connexionAdmin($mailconnect);
 
-        echo "oui";
+        
         
        
         if (password_verify($mdpconnect, $result['motdepasse'])){
-            echo "oui";
+            
             
             $_SESSION['adminid']= $result['id'];
             $_SESSION['adminmail'] = $result['email'];
