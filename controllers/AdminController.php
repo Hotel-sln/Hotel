@@ -79,6 +79,7 @@ function supprimechambreAction()
 
 function isConn(){
     session_start();
+    
     if(!isset($_SESSION['adminid']) AND (!isset($_SESSION['adminmail']))){
 
         header('Location: ' . BASE_URL . 'admin/login');
@@ -88,6 +89,7 @@ function isConn(){
 function loginAction()
 {
    
+    session_start();
     
     if (isset($_POST['formconnect'])) {
         $mailconnect = htmlspecialchars($_POST['mailconnect']);
@@ -95,11 +97,12 @@ function loginAction()
         
         $admin= new Admin();
         $result = $admin->connexionAdmin($mailconnect);
-        
-        
+
+        echo "oui";
         
        
-        if($result && password_verify($mdpconnect, $result['motdepasse'])){
+        if (password_verify($mdpconnect, $result['motdepasse'])){
+            echo "oui";
             
             $_SESSION['adminid']= $result['id'];
             $_SESSION['adminmail'] = $result['email'];
@@ -114,6 +117,8 @@ function loginAction()
            
             
             
+        }else{
+            echo "oups";
         }
     }
     require("views/admin/login.php");

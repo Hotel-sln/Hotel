@@ -14,7 +14,7 @@
       </div>
 
       <div class="">
-        <input class="" name="formconnect" type="submit" value="Se Connecter" />
+        <input class="formconnect" name="formconnect" type="submit" value="Se Connecter" />
       </div>
 
 
