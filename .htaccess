@@ -1,6 +1,6 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /Hotel
+RewriteBase /ProjetFinDeFormation
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_URI} !-f
 RewriteCond %{REQUEST_URI} !-d
